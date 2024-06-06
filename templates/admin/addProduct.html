@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Dashor - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+          href="../../static/adminResources/image/favicon.ico">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+    <script type="text/javascript">
+        function loadSubCategoryProduct() {
+            var productCategoryId = document.getElementById("productCategoryId");
+            var productSubcategoryId = document.getElementById("productSubcategoryId");
+
+            productSubcategoryId.innerHTML = "";
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState === 4) {
+                    var json = JSON.parse(ajax.responseText);
+                    for (var i = 0; i < json.length; i++) {
+                        var option = document.createElement("option");
+                        option.value = json[i].subcategory_id;
+                        option.text = json[i].subcategory_name;
+                        productSubcategoryId.options.add(option);
+                    }
+                }
+            };
+            ajax.open("get", "/ajax_subcategory_product?productCategoryId=" + productCategoryId.value, true);
+            ajax.send();
+        }
+
+    </script>
+</head>
+<body class="fixed-left">
+<!-- Begin page -->
+<div id="wrapper">
+    <!-- ========== Left Sidebar Start ========== -->
+
+    {% include 'admin/menu.html' %}
+
+    <!-- Left Sidebar End -->
+    <!-- Start right Content here -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                {% include 'admin/header.html' %}
+            </div>
+            <!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid py-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Add Product</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <form class=""
+                                  action="/admin_insert_product"
+                                  enctype="multipart/form-data"
+                                  method="post">
+                                {% csrf_token %}
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group mb-1"><label
+                                        >Category
+                                            Name</label></div>
+                                        <select class="select2 form-control 
+                                        mb-0 custom-select 
+                                        select2-hidden-accessible"
+                                                style="width: 100%;
+                                                    height:36px;"
+                                                tabindex="-1"
+                                                aria-hidden="true"
+                                                name="productCategoryId"
+                                                id="productCategoryId"
+                                                onchange="loadSubCategoryProduct()">
+                                            <option value="none" disabled
+                                                    selected>--Select
+                                                Category--
+                                            </option>
+                                            {% for row in category_vo_list %}
+                                                <option value="{{ row.category_id }}">{{ row.category_name }}</option>
+                                            {% endfor %}
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <div class="form-group mb-1">
+                                                <label>Sub
+                                                    Category Name</label></div>
+                                            <select class="select2 form-control
+                                        mb-0 custom-select select2-hidden-accessible"
+                                                    style="width: 100%;
+                                                    height:36px;"
+                                                    tabindex="-1"
+                                                    aria-hidden="true"
+                                                    name="productSubcategoryId"
+                                                    id="productSubcategoryId">
+                                                <option value="none" disabled
+                                                        selected>--Select
+                                                    Sub Category--
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group py-2">
+                                    <label>Product Name</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           required
+                                           placeholder="Product name"
+                                           name="product_name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Product
+                                        Description</label>
+                                    <div>
+                                                    <textarea required
+                                                              class="form-control"
+                                                              rows="5"
+                                                              name="product_description"
+                                                    ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <label>Product Quantity</label>
+                                        <div class="form-group">
+                                            <input type="number"
+                                                   class="form-control"
+                                                   required
+                                                   placeholder="Product Quantity"
+                                                   name="product_quantity">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <label>Product Price</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">₹</span>
+                                            </div>
+                                            <input type="number"
+                                                   class="form-control"
+                                                   required
+                                                   placeholder="Product Price"
+                                                   name="product_price">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group py-2">
+                                            <label>Product color</label>
+                                            <input type="text"
+                                                   class="form-control"
+                                                   required
+                                                   name="product_color">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group py-2">
+                                            <label>Product Adjustable</label>
+                                            <input type="text"
+                                                   class="form-control"
+                                                   required
+                                                   name="product_adjustable">
+                                        </div>
+
+                                    </div>
+                        </div>
+                        <div class="form-group py-2">
+                            <label>Product Material</label>
+                            <input type="text"
+                                   class="form-control"
+                                   required
+                                   name="product_material">
+                        </div>
+
+
+                        <label>Product Image</label>
+                        <div class="custom-file mb-4">
+                            <input type="file"
+                                   class="custom-file-input"
+                                   name="product_image"
+                                   accept="image/png,image/jpeg,image/jpg"
+                                   required
+                            ><label class="custom-file-label"
+                                    for="inputGroupFile04">Choose
+                            file</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div>
+                                <button type="submit"
+                                        class="btn btn-secondary waves-effect waves-light">
+                                    Submit
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-danger waves-effect m-l-5">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- container -->
+        </div>
+        <!-- Page content Wrapper -->
+    </div>
+    <!-- content -->
+
+    {% include 'admin/footer.html' %}
+
+</div>
+<!-- End Right content here -->
+</div>
+<!-- END wrapper -->
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<script src="../../static/adminResources/js/form-validation.init.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>

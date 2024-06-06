@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Glow Gadget – Admin</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"
+          href="../../static/adminResources/css/MetroJs.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/morris.css">
+    <link href="../../static/adminResources/css/jquery-jvectormap-2.0.2.css"
+          rel="stylesheet">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+</head>
+<body class="fixed-left"><!-- Begin page -->
+<div id="wrapper"><!-- ========== Left Sidebar Start ========== -->
+
+    {% include 'admin/menu.html' %}
+
+    <!-- Left Sidebar End --><!-- Start right Content here -->
+    <div class="content-page"><!-- Start content -->
+        <div class="content"><!-- Top Bar Start -->
+            <div class="topbar">
+
+
+                {% include 'admin/header.html' %}
+
+
+            </div><!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                </div>
+                                <h4 class="page-title">Dashboard</h4></div>
+                        </div>
+                    </div><!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="fa fa-users"
+                                        style="font-size: 25px"></i></div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">
+                                    Total Users</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_user"
+                                                style="color: white"
+                                        >View Users</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ user }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="fas fa-bars"
+                                        style="font-size: 25px"></i></div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">
+                                    Total Category</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_category"
+                                                style="color: white"
+                                        >View Category</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ category }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="fa fa-list-ul"
+                                        style="font-size: 25px"></i></div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">
+                                    Total Sub Category</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_subcategory"
+                                                style="color: white"
+                                        >View Sub Category</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ subcategory }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="fa fa-th-large"
+                                        style="font-size: 25px"></i></div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">Total
+                                    Products</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_product"
+                                                style="color: white"
+                                        >View Products</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ product }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="mdi mdi-briefcase-check"
+                                        style="font-size: 35px"></i>
+                                </div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">Total
+                                    Orders</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            color: white;
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_order"
+                                                style="color: white"
+                                        >View Orders</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ order }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card mini-stat">
+                                <div class="mini-stat-icon text-right"><i
+                                        class="mdi mdi-comment-multiple-outline"
+                                        style="font-size: 29px"></i>
+                                </div>
+                                <div class="p-4"><h5
+                                        class="text-uppercase mb-3">Total
+                                    Complaints</h5>
+                                    <div class="float-right">
+                                        <button style="background-color: rgba(89,206,181, .7);
+                                            color: white;
+                                            border-radius: 5px;
+                                            font-size: 17px;
+                                            border:none;
+                                            padding: 5px 15px 5px 15px"><a
+                                                href="/admin_view_complain"
+                                                style="color: white"
+                                        >View Complaints</a>
+                                        </button>
+                                    </div>
+                                    <h4 class="mb-0">{{ complain }}
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end row -->
+                    <!-- content -->
+
+                    {% include 'admin/footer.html' %}
+                </div><!-- End Right content here --></div><!-- END wrapper -->
+            <!-- jQuery  -->
+            <script src="../../static/adminResources/js/jquery.min.js"></script>
+            <script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+            <script src="../../static/adminResources/js/modernizr.min.js"></script>
+            <script src="../../static/adminResources/js/detect.js"></script>
+            <script src="../../static/adminResources/js/fastclick.js"></script>
+            <script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+            <script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+            <script src="../../static/adminResources/js/waves.js"></script>
+            <script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+            <script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+            <script src="../../static/adminResources/js/MetroJs.min.js"></script>
+            <script src="../../static/adminResources/js/jquery-jvectormap-2.0.2.min.js"></script>
+            <script src="../../static/adminResources/js/jquery-jvectormap-world-mill-en.js"></script>
+            <script src="../../static/adminResources/js/jquery.sparkline.min.js"></script>
+            <script src="../../static/adminResources/js/morris.min.js"></script>
+            <script src="../../static/adminResources/js/raphael-min.js"></script>
+            <script src="../../static/adminResources/js/dashboard.js"></script>
+            <!-- App js -->
+            <script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>

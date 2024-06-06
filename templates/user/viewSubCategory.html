@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+    <style>
+        .ab {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+    <!-- header menu -->
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img class="img-responsive"
+                                              src="../../static/userResources/image/logo.jpg"
+                                              alt="logo.jpg"/></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+                        <a href="#offcanvas-cart" class="bag offcanvas-toggle"
+                           data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Header Section End -->
+
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content" style="margin-left: 20px">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard">Home</a></li>
+                        <li><a href="/user_load_category">Category</a></li>
+                        <li>Sub Category</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- Deal Area Start -->
+<div class="deal-area bg-light-gray pt-60px pb-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title" style="margin-left: 20px">
+                    <h2 class="section-heading"><h2>Popular Sub
+                        Categories</h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="deal-slider  swiper-initialized swiper-horizontal swiper-pointer-events">
+        <div class="container">
+            <div class="row">
+                {% for i in subcategory_list %}
+                    <div class="col-lg-6">
+                        <div class="deal-slider-wrapper swiper-wrapper"
+                             id="swiper-wrapper-4b2e6ac71fcc8ae7"
+                             aria-live="polite"
+                             style="transform: translate3d(0px, 0px, 0px);">
+                            <!-- Single Item -->
+                            <div class="deal-slider-item swiper-slide swiper-slide-active"
+                                 role="group" aria-label="1 / 4"
+                                 style="width: 690px; margin-right: 30px;">
+                                <article class="list-product">
+                                    <div class="img-block">
+                                        <a class="thumbnail"
+                                           href="/user_load_product?subcategory_id={{ i.subcategory_id }}">
+                                            <img class="first-img"
+                                                 src="{{ i.subcategory_image.url }}"
+                                                 height="217px"
+                                                 style="padding: 10px 5px 1px 15px"
+                                                 alt="Sub Category Img">
+                                        </a>
+                                    </div>
+
+                                    <div class="product-decs">
+                                        <a class="inner-link" style="margin-top: 7px;font-size: 20px;color: 
+                                        #0b0b0b"><span
+                                                class="ab">Sub 
+                                            Category :
+                                            {{ i.subcategory_name }}</span></a>
+                                        <h2>
+                                            <a class="product-link" style="margin-top: 30px ; color: gray; 
+                                            font-size:17px">
+                                                Category : {{ i.subcategory_category_vo.category_name }}
+                                            </a>
+                                        </h2>
+                                        <div class="rating-product">
+
+                                        </div>
+                                        <div class="category-discript">
+                                            <center>
+                                                <li>
+                                                    <a href="/user_load_product?subcategory_id={{ i.subcategory_id }}"
+                                                       class="btn btn-primary
+                                                   mb-5" style="color: white;margin-top: 30px">View
+                                                        All</a>
+                                                </li>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <span class="swiper-notification" aria-live="assertive"
+              aria-atomic="true"></span></div>
+</div>
+
+</div>
+<!-- Deal Area End -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal"
+                        aria-label="Close"><span
+                        aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">
+                        <!-- Swiper -->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="product-details-content quickview-content">
+                            <h2>Originals Kaval Windbr</h2>
+                            <p class="reference">
+                                Reference:<span> demo_17</span></p>
+                            <div class="pro-details-rating-wrap">
+                                <div class="rating-product">
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                </div>
+                                <span class="read-review"><a
+                                        class="reviews"
+                                        href="#">Read reviews (1)</a></span>
+                            </div>
+                            <div class="pricing-meta">
+                                <ul>
+                                    <li class="old-price not-cut">€18.90
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="quickview-para">Lorem ipsum dolor sit
+                                amet, consectetur adipisic elit eiusm
+                                tempor
+                                incidid ut labore et dolore magna aliqua.
+                                Ut
+                                enim ad minim venialo quis nostrud
+                                exercitation
+                                ullamco</p>
+                            <div class="pro-details-size-color">
+                                <div class="pro-details-color-wrap">
+                                    <span>Color</span>
+                                    <div class="pro-details-color-content">
+                                        <ul>
+                                            <li class="blue"></li>
+                                            <li class="maroon active"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-details-quality">
+                                <div class="cart-plus-minus">
+                                    <input class="cart-plus-minus-box"
+                                           type="text" name="qtybutton"
+                                           value="1"/>
+                                </div>
+                                <div class="pro-details-cart btn-hover">
+                                    <a href="#"> + Add To Cart</a>
+                                </div>
+                            </div>
+                            <div class="pro-details-wish-com">
+                                <div class="pro-details-wishlist">
+                                    <a href="wishlist.html"><i
+                                            class="ion-android-favorite-outline"></i>Add
+                                        to wishlist</a>
+                                </div>
+                                <div class="pro-details-compare">
+                                    <a href="compare.html"><i
+                                            class="ion-ios-shuffle-strong"></i>Add
+                                        to compare</a>
+                                </div>
+                            </div>
+                            <div class="pro-details-social-info">
+                                <span>Share</span>
+                                <div class="social-info">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-google"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+        <script src="assets/js/plugins/swiper.min.js"></script>
+        <script src="assets/js/plugins/countdown.js"></script>
+        <script src="assets/js/plugins/scrollup.js"></script>
+        <script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+</body>
+</html>
+
+{#<!DOCTYPE html>#}
+{#<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->#}
+{#<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"#}
+{#      lang="en">#}
+{#<head>#}
+{#    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">#}
+{##}
+{#    <meta http-equiv="x-ua-compatible" content="ie=edge">#}
+{#    <title>GlowGadget – LED Lights eCommerce</title>#}
+{#    <meta name="robots" content="noindex, follow">#}
+{#    <meta name="description" content="">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#    <!-- Favicon -->#}
+{#    <link rel="shortcut icon" type="image/x-icon"#}
+{#          href="/user_load_product?subcategory_id={{ i.subcategory_id }}">#}
+{#    <!-- Google Fonts -->#}
+{#    <link href="../../static/userResources/image/css" rel="stylesheet">#}
+{##}
+{#    <!-- CSS#}
+{#============================================ -->#}
+{##}
+{#    <!-- Vendor CSS (Bootstrap & Icon Font) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->#}
+{##}
+{#    <!-- Plugins CSS (All Plugins Files) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->#}
+{##}
+{#    <!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/vendor.min.css"/>#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/plugins.min.css"/>#}
+{#    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">#}
+{##}
+{#    <!-- Main Style CSS -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->#}
+{##}
+{#</head>#}
+{##}
+{#<body>#}
+{#<!-- Header Section Start From Here -->#}
+{#<header class="header-wrapper">#}
+{##}
+{#    {% include 'user/header.html' %}#}
+{#    <!-- header menu -->#}
+{#</header>#}
+{#<!-- Header Section End Here -->#}
+{##}
+{#<!-- Mobile Header Section Start -->#}
+{#<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">#}
+{#    <div class="container">#}
+{#        <div class="row align-items-center">#}
+{##}
+{#            <!-- Header Logo Start -->#}
+{#            <div class="col">#}
+{#                <div class="header-logo">#}
+{#                    <a href="index.html"><img class="img-responsive"#}
+{#                                              src="../../static/userResources/image/logo.jpg"#}
+{#                                              alt="logo.jpg"/></a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Header Logo End -->#}
+{##}
+{#            <!-- Header Tools Start -->#}
+{#            <div class="col-auto">#}
+{#                <div class="header-tools justify-content-end">#}
+{#                    <div class="cart-info d-flex align-self-center">#}
+{#                        <a href="compare.html" class="shuffle d-xs-none"#}
+{#                           data-number="3"><i class="icon-shuffle"></i></a>#}
+{#                        <a href="#offcanvas-wishlist"#}
+{#                           class="heart offcanvas-toggle d-xs-none"#}
+{#                           data-number="3"><i class="icon-heart"></i></a>#}
+{#                        <a href="#offcanvas-cart" class="bag offcanvas-toggle"#}
+{#                           data-number="3"><i#}
+{#                                class="icon-bag"></i><span>$20.00</span></a>#}
+{#                    </div>#}
+{#                    <div class="mobile-menu-toggle">#}
+{#                        <a href="#offcanvas-mobile-menu"#}
+{#                           class="offcanvas-toggle">#}
+{#                            <svg viewBox="0 0 800 600">#}
+{#                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"#}
+{#                                      id="top"></path>#}
+{#                                <path d="M300,320 L540,320" id="middle"></path>#}
+{#                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"#}
+{#                                      id="bottom"#}
+{#                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>#}
+{#                            </svg>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Header Tools End -->#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#<!-- Mobile Header Section End -->#}
+{#<!-- OffCanvas Cart Start -->#}
+{#<!-- OffCanvas Cart End -->#}
+{#<!-- Breadcrumb Area Start -->#}
+{#<div class="breadcrumb-area">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <div class="breadcrumb-content">#}
+{#                    <ul class="nav">#}
+{#                        <li><a href="/user_load_dashboard">Home</a></li>#}
+{#                        <li><a href="/user_load_category">Category</a></li>#}
+{#                        <li>Sub Category</li>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Breadcrumb Area End-->#}
+{#<!-- Deal Area Start -->#}
+{#<div class="deal-area bg-light-gray pt-60px pb-30px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <div class="section-title">#}
+{#                    <h2 class="section-heading">Deals Of The Day</h2>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#    <div class="deal-slider  swiper-initialized swiper-horizontal swiper-pointer-events">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                {% for i in subcategory_list %}#}
+{#                    <div class="col-lg-6">#}
+{#                        <div class="deal-slider-wrapper swiper-wrapper"#}
+{#                             id="swiper-wrapper-4b2e6ac71fcc8ae7"#}
+{#                             aria-live="polite"#}
+{#                             style="transform: translate3d(0px, 0px, 0px);">#}
+{#                            <!-- Single Item -->#}
+{#                            <div class="deal-slider-item swiper-slide swiper-slide-active"#}
+{#                                 role="group" aria-label="1 / 4"#}
+{#                                 style="width: 690px; margin-right: 30px;">#}
+{#                                <article class="list-product">#}
+{#                                    <div class="img-block">#}
+{#                                        <a href="/user_load_product?subcategory_id={{ i.subcategory_id }}"#}
+{#                                           class="thumbnail">#}
+{#                                            <img class="first-img"#}
+{#                                                 src="{{ i.subcategory_image.url }}"#}
+{#                                                 height="215px"#}
+{#                                                 alt="Sub Category Img">#}
+{#                                        </a>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="product-decs">#}
+{#                                        <a class="inner-link"#}
+{#                                           href="/user_load_product?subcategory_id={{ i.subcategory_id }}"><span>#}
+{#                                        {{ i.category_name }}</span></a>#}
+{#                                        <h1>#}
+{#                                            <a href="/user_load_subcategory?category_id={{ i.category_id }}"#}
+{#                                               class="product-link">{{ i.category_name }}</a></h2>#}
+{#                                        </h1>#}
+{#                                        <div>#}
+{##}
+{#                                            <h2 style="margin-bottom: 15px"#}
+{#                                            >#}
+{#                                                <a href="/user_load_product?subcategory_id={{ i.subcategory_id }}"#}
+{#                                                   class="product-link"#}
+{#                                                   style="color: black"#}
+{#                                                >{{ i.subcategory_name }}</a>#}
+{#                                            </h2>#}
+{#                                            {% for j in category_list %}#}
+{#                                                <h1 style="margin-bottom: 35px">#}
+{#                                                    <a href="/user_load_category?category_id={{ j.category_id }}"#}
+{#                                                       class="product-link">{{ j.category_name }}</a>#}
+{#                                                </h1>#}
+{#                                            {% endfor %}#}
+{#                                        </div>#}
+{#                                        <div class="rating-product">#}
+{##}
+{#                                            <div>#}
+{#                                                <li class="subcategory-discript"#}
+{#                                                    style="margin-left: 150px">#}
+{#                                                    <a class="btn #}
+{#                                                    btn-primary"#}
+{#                                                       href="/user_load_product?subcategory_id={{ i.subcategory_id }}"#}
+{#                                                       style="color:white">View#}
+{#                                                        All </a></li>#}
+{#                                                <li>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="add-to-link">#}
+                                            {#                                        <ul>#}
+                                            {#                                            <li class="cart"><a#}
+                                            {#                                                    class="cart-btn"#}
+                                            {#                                                    href="https://htmldemo.net/rozer/rozer/index.html#">ADD#}
+                                            {#                                                TO CART </a></li>#}
+                                            {#                                            <li>#}
+                                            {#                                                <a href="https://htmldemo.net/rozer/rozer/wishlist.html"><i#}
+                                            {#                                                        class="icon-heart"></i></a>#}
+                                            {#                                            </li>#}
+                                            {#                                            <li>#}
+                                            {#                                                <a href="https://htmldemo.net/rozer/rozer/compare.html"><i#}
+                                            {#                                                        class="icon-shuffle"></i></a>#}
+                                            {#                                            </li>#}
+                                            {#                                        </ul>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </article>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                {% endfor %}#}
+{#            </div>#}
+{#        </div>#}
+{#        <!-- Add Arrows -->#}
+{#        <span class="swiper-notification" aria-live="assertive"#}
+{#              aria-atomic="true"></span></div>#}
+{#    </div>#}
+{#<!-- Deal Area End -->#}
+{#<!-- Footer Area Start -->#}
+{#{% include 'user/footer.html' %}#}
+{#<!-- Footer Area End -->#}
+{#<!-- Modal -->#}
+{#<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">#}
+{#    <div class="modal-dialog" role="document">#}
+{#        <div class="modal-content">#}
+{#            <div class="modal-header">#}
+{#                <button type="button" class="close" data-bs-dismiss="modal"#}
+{#                        aria-label="Close"><span#}
+{#                        aria-hidden="true">x</span>#}
+{#                </button>#}
+{#            </div>#}
+{#            <div class="modal-body">#}
+{#                <div class="row">#}
+{#                    <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">#}
+{#                        <!-- Swiper -->#}
+{#                        <div class="swiper-container gallery-top">#}
+{#                            <div class="swiper-wrapper">#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/11.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/12.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/13.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/14.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="swiper-container gallery-thumbs">#}
+{#                            <div class="swiper-wrapper">#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/11.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/12.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/13.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/14.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-md-7 col-sm-12 col-xs-12">#}
+{#                        <div class="product-details-content quickview-content">#}
+{#                            <h2>Originals Kaval Windbr</h2>#}
+{#                            <p class="reference">#}
+{#                                Reference:<span> demo_17</span></p>#}
+{#                            <div class="pro-details-rating-wrap">#}
+{#                                <div class="rating-product">#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                </div>#}
+{#                                <span class="read-review"><a#}
+{#                                        class="reviews"#}
+{#                                        href="#">Read reviews (1)</a></span>#}
+{#                            </div>#}
+{#                            <div class="pricing-meta">#}
+{#                                <ul>#}
+{#                                    <li class="old-price not-cut">€18.90#}
+{#                                    </li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <p class="quickview-para">Lorem ipsum dolor sit#}
+{#                                amet, consectetur adipisic elit eiusm#}
+{#                                tempor#}
+{#                                incidid ut labore et dolore magna aliqua.#}
+{#                                Ut#}
+{#                                enim ad minim venialo quis nostrud#}
+{#                                exercitation#}
+{#                                ullamco</p>#}
+{#                            <div class="pro-details-size-color">#}
+{#                                <div class="pro-details-color-wrap">#}
+{#                                    <span>Color</span>#}
+{#                                    <div class="pro-details-color-content">#}
+{#                                        <ul>#}
+{#                                            <li class="blue"></li>#}
+{#                                            <li class="maroon active"></li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-quality">#}
+{#                                <div class="cart-plus-minus">#}
+{#                                    <input class="cart-plus-minus-box"#}
+{#                                           type="text" name="qtybutton"#}
+{#                                           value="1"/>#}
+{#                                </div>#}
+{#                                <div class="pro-details-cart btn-hover">#}
+{#                                    <a href="#"> + Add To Cart</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-wish-com">#}
+{#                                <div class="pro-details-wishlist">#}
+{#                                    <a href="wishlist.html"><i#}
+{#                                            class="ion-android-favorite-outline"></i>Add#}
+{#                                        to wishlist</a>#}
+{#                                </div>#}
+{#                                <div class="pro-details-compare">#}
+{#                                    <a href="compare.html"><i#}
+{#                                            class="ion-ios-shuffle-strong"></i>Add#}
+{#                                        to compare</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-social-info">#}
+{#                                <span>Share</span>#}
+{#                                <div class="social-info">#}
+{#                                    <ul>#}
+{#                                        <li>#}
+{#                                            <a href="#"><i#}
+{#                                                    class="ion-social-facebook"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="#"><i#}
+{#                                                    class="ion-social-twitter"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="#"><i#}
+{#                                                    class="ion-social-google"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="#"><i#}
+{#                                                    class="ion-social-instagram"></i></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Modal end -->#}
+{#<!-- JS#}
+{#============================================ -->#}
+{##}
+{#<!-- Vendors JS -->#}
+{#<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>#}
+{#        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>#}
+{#        <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>#}
+{#        <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->#}
+{##}
+{#<!-- Plugins JS -->#}
+{#<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>#}
+{#        <script src="assets/js/plugins/swiper.min.js"></script>#}
+{#        <script src="assets/js/plugins/countdown.js"></script>#}
+{#        <script src="assets/js/plugins/scrollup.js"></script>#}
+{#        <script src="assets/js/plugins/elevateZoom.js"></script> -->#}
+{##}
+{#<!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#<script src="../../static/userResources/js/vendor.min.js"></script>#}
+{#<script src="../../static/userResources/js/plugins.min.js"></script>#}
+{##}
+{#<!-- Main Activation JS -->#}
+{#<script src="../../static/userResources/js/main.js"></script>#}
+{#</body>#}
+{#</html>#}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Glow Gadget – Admin</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+</head>
+<body class="fixed-left"><!-- Begin page -->
+<div id="wrapper"><!-- ========== Left Sidebar Start ========== -->
+
+    {% include 'admin/menu.html' %}
+
+    <!-- Left Sidebar End --><!-- Start right Content here -->
+    <div class="content-page"><!-- Start content -->
+        <div class="content"><!-- Top Bar Start -->
+            <div class="topbar">
+
+
+                {% include 'admin/header.html' %}
+
+
+            </div><!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid py-2">
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">
+                                        Complaint Reply
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+
+                                    <form class="" method="post"
+                                          action="/admin_insert_complain_reply/">
+                                        {% csrf_token %}
+                                        <input type="hidden"
+                                               value="{{ complain_vo_list.complain_id }}"
+                                               name="complainId">
+                                        <input type="hidden"
+                                               value="{{ complain_vo_list.complain_from_login_id }}"
+                                               name="complain_from_login_id">
+                                        <div
+                                                class="form-group"><label>Complaint
+                                            Subject
+                                        </label> <input type="text"
+                                                        id="complainSubject"
+                                                        name="complainSubject"
+                                                        class="form-control"
+                                                        value="{{ complain_vo_list.complain_subject }}"
+                                                        required>
+                                        </div>
+
+                                        <div
+                                                class="form-group"><label>Complaint
+                                            Description</label>
+                                            <input type="text"
+                                                   id="complainDescription"
+                                                   name="complainDescription"
+                                                   class="form-control"
+                                                   value="{{ complain_vo_list.complain_description }}"
+                                                   required>
+                                        </div>
+
+                                        <div class="form-group"><label>Complaint
+                                            Reply</label>
+                                            <textarea rows="5"
+                                                      id="complainReply"
+                                                      name="complainReply"
+                                                      class="form-control"
+                                                      required></textarea>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <div>
+                                                <button type="submit"
+                                                        class="btn btn-secondary waves-effect waves-light">
+                                                    Reply
+                                                </button>
+                                                <button type="reset"
+                                                        class="btn btn-danger waves-effect m-l-5">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- end col -->
+
+                    </div><!-- end row --></div><!-- container --></div>
+            <!-- Page content Wrapper --></div><!-- content -->
+
+        {% include 'admin/footer.html' %}
+
+    </div><!-- End Right content here --></div><!-- END wrapper -->
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/form-validation.init.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>

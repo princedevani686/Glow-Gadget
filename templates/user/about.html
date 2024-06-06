@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="assets/images/favicon/favicon.png"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800&display=swap"
+          rel="stylesheet"/>
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+    <!-- header menu -->
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img class="img-responsive"
+                                              src="../../static/userResources/image/logo.jpg"
+                                              alt="logo.jpg"/></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+                        <a href="compare.html" class="shuffle d-xs-none"
+                           data-number="3"><i class="icon-shuffle"></i></a>
+                        <a href="#offcanvas-wishlist"
+                           class="heart offcanvas-toggle d-xs-none"
+                           data-number="3"><i class="icon-heart"></i></a>
+                        <a href="#offcanvas-cart" class="bag offcanvas-toggle"
+                           data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Header Section End -->
+<!-- OffCanvas Cart Start -->
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Cart</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/1(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Walnut Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/2(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Lucky Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/3.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Fish Cut Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="sub-total">
+                <strong>Subtotal :</strong>
+                <span class="amount">$144.00</span>
+            </div>
+            <div class="buttons">
+                <a href="https://htmldemo.net/rozer/rozer/cart.html"
+                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                <a href="https://htmldemo.net/rozer/rozer/checkout.html"
+                   class="btn btn-outline-dark current-btn">checkout</a>
+            </div>
+            <p class="minicart-message">Free Shipping on All Orders Over
+                $100!</p>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Cart End -->
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard">Home</a></li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- About Area Start -->
+<section class="about-area mtb-60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-left-image mb-md-30px mb-lm-30px ">
+                    <img src="../../static/userResources/image/54321.jpeg"
+                         alt="" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="about-title">
+                        <h2>Welcome To GlowGadget</h2>
+                    </div>
+                    <p class="mb-30px">
+                        GlowGadget LED is your one-stop destination for all
+                        your LED lighting needs. We specialize in providing
+                        high-quality LED products that illuminate your life
+                        with style and efficiency. Our extensive range of LED
+                        lights caters to various purposes, from enhancing the
+                        ambiance of your home to illuminating outdoor spaces
+                        for safety and aesthetics.
+
+                        At GlowGadget LED, we understand the importance of
+                        energy efficiency without compromising on brightness or
+                        longevity. That's why we offer an array of eco-friendly
+                        LED options that not only save you money on your energy
+                        bills but also reduce your carbon footprint.
+
+
+                    </p>
+                    <p>
+                        Whether you're looking for LED bulbs, strips, fixtures,
+                        or decorative lights, we've got you covered. Our
+                        user-friendly website makes it easy to browse through
+                        our selection and find the perfect lighting solution
+                        for any space or occasion. With our competitive prices
+                        and reliable customer service, shopping for LED
+                        lighting has never been more convenient.
+
+
+                    </p>
+                    <p>
+                        Join the eco-friendly lighting revolution with
+                        GlowGadget LED and brighten up your world while saving
+                        energy!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60px">
+            <div class="col-md-4 mb-lm-30px">
+                <div class="single-about">
+                    <h4>Our Company</h4>
+                    <p>
+                        Welcome to AxisRay, where cutting-edge technology meets
+                        exceptional customer service. At AxisRay, we're more
+                        than just a tech company; we're innovators, creators,
+                        and problem-solvers committed to enhancing your digital
+                        lifestyle. Our mission is to bring you the latest and
+                        most innovative gadgets that make your life easier,
+                        more efficient, and a lot more fun.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-lm-30px">
+                <div class="single-about">
+                    <h4>Our Team</h4>
+                    <p>
+                        <b>Sarah Thompson – Founder & CEO</b><br>
+                        At GlowGadget, our team is the heart of our success.
+                        We're a passionate group of tech enthusiasts,
+                        designers, and customer service experts dedicated to
+                        bringing you the latest and greatest in tech gadgets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-about">
+                    <h4>Testimonial</h4>
+                    <p>
+                        I recently purchased the SmartGlow LED lights from
+                        GlowGadget, and I couldn't be more thrilled with my
+                        experience! From the moment I placed my order, the
+                        customer service team was incredibly responsive and
+                        helpful. My order arrived quickly and was beautifully
+                        packaged, which made the unboxing experience
+                        delightful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Area End -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+
+
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
+<script src="assets/js/plugins/countdown.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+</body>
+</html>

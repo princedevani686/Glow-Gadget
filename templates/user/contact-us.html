@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+    <!-- header menu -->
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img class="img-responsive"
+                                              src="../../static/userResources/image/logo.jpg"
+                                              alt="logo.jpg"/></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+                        <a href="compare.html" class="shuffle d-xs-none"
+                           data-number="3"><i class="icon-shuffle"></i></a>
+                        <a href="#offcanvas-wishlist"
+                           class="heart offcanvas-toggle d-xs-none"
+                           data-number="3"><i class="icon-heart"></i></a>
+                        <a href="#offcanvas-cart" class="bag offcanvas-toggle"
+                           data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+        </div>
+    </div>
+</div>
+
+
+<div class="mobile-category-nav d-xl-none mb-15px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!--=======  category menu  =======-->
+                <div class="hero-side-category">
+                    <!-- Category Toggle Wrap -->
+                    <div class="category-toggle-wrap">
+                        <!-- Category Toggle -->
+                        <button class="category-toggle"><i
+                                class="fa fa-bars"></i> All Categories
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mobile Header Section End -->
+
+<!-- OffCanvas Cart Start -->
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Cart</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/1.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Walnut
+                            Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/2.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Lucky
+                            Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/3.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Fish Cut
+                            Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="sub-total">
+                <strong>Subtotal :</strong>
+                <span class="amount">$144.00</span>
+            </div>
+            <div class="buttons">
+                <a href="cart.html"
+                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                <a href="checkout.html"
+                   class="btn btn-outline-dark current-btn">checkout</a>
+            </div>
+            <p class="minicart-message">Free Shipping on All Orders Over
+                $100!</p>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Cart End -->
+
+
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content" style="margin-left: 20px">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard/">Home</a></li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- contact area start -->
+<div class="contact-area mtb-60px">
+    <div class="container">
+        <div class="custom-row-2">
+            <div class="col-lg-4 col-md-5 mb-lm-30px">
+                <div class="contact-info-wrap" style="padding: 88px 70px
+                75px 90px;margin-left: 20px">
+                    <div class="single-contact-info">
+                        <div class="contact-icon">
+                            <i class="ion-android-call"></i>
+                        </div>
+                        <div class="contact-info-dec">
+                            <p><a href="tel://0123456789">0123456789</a></p>
+                            <p><a href="tel://0123456789">0123456789</a></p>
+                        </div>
+                    </div>
+                    <div class="single-contact-info">
+                        <div class="contact-icon">
+                            <i class="ion-android-globe"></i>
+                        </div>
+                        <div class="contact-info-dec">
+                            <p><a href="mailto://urname@email.com">xyz123@gmail.com</a>
+                            </p>
+                            <p><a href="mailto://urwebsitenaem.com">xyz123@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-contact-info">
+                        <div class="contact-icon">
+                            <i class="ion-android-pin"></i>
+                        </div>
+                        <div class="contact-info-dec">
+                            <p>Ahmedabad, Gujarat, India</p>
+                            <p>Ahmedabad, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-info">
+                            <ul>
+                                <li>
+                                    <a href="#"><i
+                                            class="ion-social-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i
+                                            class="ion-social-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i
+                                            class="ion-social-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i
+                                            class="ion-social-google"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i
+                                            class="ion-social-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="contact-form" style="margin-right: 20px">
+                    <div class="contact-title mb-30">
+                        <h2>Get In Touch</h2>
+                    </div>
+                    <form class="contact-form-style"
+                          action="/user_send_complain/"
+                          method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input name="complain_subject"
+                                       placeholder="Subject*"
+                                       type="text"/>
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea name="complain_description"
+                                          placeholder="Your Message*"></textarea>
+                                <button class="submit" type="submit">SEND
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-messege"></p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-7">
+                <div class="contact-form" style="margin-top: 20px;margin-left: 20px;margin-right: 20px">
+                    <div class="comment-detail">
+                        <div class="comment-detail-title">
+                            <h4>View Complaints</h4>
+                        </div>
+                        {% if complaint_vo_list %}
+                            <div class="row mt-5">
+                                {% for complaint in complaint_vo_list %}
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <div class="d-flex align-items-start profile-feed-item">
+                                                <img src="../../static/userResources/image/user_logo.jpeg"
+                                                     alt="profile" height="100px" width="100px"
+                                                     class="img-sm rounded-circle">
+                                                <div style="margin-left: 20px">
+                                                    <h5 class="mt-2">
+                                                        {{ complaint.complain_user_vo.user_login_vo.login_username }}
+                                                        <div id="div2">
+                                                            <small style="color: gray; opacity: 0.6; font-size: small">
+                                                                <i class="mdi mdi-clock mr-1"></i>
+                                                                {{ complaint.complain_date }}
+                                                            </small>
+                                                        </div>
+                                                    </h5>
+                                                    <p> &nbsp;&nbsp;&nbsp;
+                                                        <u>Complaint Subject</u>:
+                                                        &nbsp;&nbsp;{{ complaint.complain_subject }}
+                                                    </p>
+                                                    <p> &nbsp;&nbsp;&nbsp;
+                                                        <u>Description </u>:
+                                                        {{ complaint.complain_description }}
+                                                    </p>
+                                                    <p class="small text-muted mt-2 mb-0">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% if reply_vo_list %}
+                                            {% for reply in reply_vo_list %}
+                                                {% if reply.reply_complain_vo.complain_id == complaint.complain_id %}
+                                                    <div style="margin-left: 250px"
+                                                         class="table-responsive">
+                                                        <div class="d-flex align-items-start profile-feed-item mb-3">
+                                                            <img src="../../static/adminResources/image/admin-logo.jpeg"
+                                                                 alt="profile" height="100px" width="100px"
+                                                                 class="img-sm rounded-circle">
+                                                            <div class="ml-4" style="margin-left: 20px;
+                                                            margin-top: 20px">
+                                                                <h5>
+                                                                    admin@gmail.com
+                                                                    <div id="div2">
+                                                                        <small style="color: gray; opacity: 0.6; font-size: small">
+                                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                                            {{ reply.reply_date }}
+                                                                        </small>
+                                                                    </div>
+                                                                </h5>
+                                                                <p>
+                                                                    <u>Reply</u>:
+                                                                    {{ reply.reply_description }}
+                                                                </p>
+                                                                <p class="small text-muted mt-2 mb-0">
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                    <hr>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="row" style="margin-left:400px;">
+                                <h5>No Complain Available !</h5>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact area end -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+
+
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
+<script src="assets/js/plugins/countdown.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/elevateZoom.js"></script>
+<script src="assets/js/plugins/ajax-mail.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+</body>
+</html>

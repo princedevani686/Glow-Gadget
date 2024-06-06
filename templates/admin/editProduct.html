@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Glow Gadget – Admin</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            let pobj = document.getElementById("productCategoryId");
+            if ("createEvent" in document) {
+                var evt = document.createEvent("HTMLEvents");
+                evt.initEvent("change", false, true);
+                pobj.dispatchEvent(evt);
+            } else {
+                pobj.fireEvent("onchange")
+            }
+        });
+
+
+        function loadProductSubcategory() {
+            console.log("loadProductSubcategory");
+            var productCategoryId = document.getElementById("productCategoryId");
+            var productSubcategoryId = document.getElementById("productSubcategoryId");
+
+            productSubcategoryId.innerHTML = "";
+
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState === 4) {
+                    alert(ajax.responseText);
+                    var json = JSON.parse(ajax.responseText);
+                    for (var i = 0; i < json.length; i++) {
+                        var option = document.createElement("option");
+                        option.value = json[i].subcategory_id;
+                        option.text = json[i].subcategory_name;
+                        productSubcategoryId.options.add(option);
+                    }
+                    $("#productSubcategoryId").prop('value', $('#subCatID').val())
+                }
+            };
+            ajax.open("get", "/admin_ajax_subcategory_product?productCategoryId=" + productCategoryId.value, true);
+            ajax.send();
+        }
+    </script>
+</head>
+<body class="fixed-left"><!-- Begin page -->
+<div id="wrapper"><!-- ========== Left Sidebar Start ========== -->
+
+    {% include 'admin/menu.html' %}
+
+    <!-- Left Sidebar End --><!-- Start right Content here -->
+    <div class="content-page"><!-- Start content -->
+        <div class="content"><!-- Top Bar Start -->
+            <div class="topbar">
+
+
+                {% include 'admin/header.html' %}
+
+            </div><!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+
+                                <h4 class="page-title">Update Product</h4>
+                            </div>
+                        </div>
+                    </div><!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+
+                                    <form class=""
+                                          action="/admin_update_product"
+                                          method="post"
+                                          enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        {#                                        {% for row in product_vo_list %}#}
+                                        <div class="row">
+                                            <input type="hidden" id="productId"
+                                                   name="productId"
+                                                   value="{{ product_vo_list.product_id }}">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Category
+                                                        Name</label>
+                                                    <select id="productCategoryId"
+                                                            name="productCategoryId"
+                                                            class="select2 
+                                                            form-control mb-0 custom-select select2-hidden-accessible"
+                                                            style="width: 100%; height:36px;"
+                                                            tabindex="-1"
+                                                            aria-hidden="true"
+                                                            onchange="loadProductSubcategory()">
+                                                        <option>Select Category
+                                                        </option>
+
+                                                        {% for i in category_vo_list %}
+                                                            {% if product_vo_list.product_category_vo.category_id == i.category_id %}
+                                                                <option value="{{ i.category_id }}"
+                                                                        selected>{{ i.category_name }}</option>
+                                                            {% else %}
+                                                                <option value="{{ i.category_id }}">{{ i.category_name }}</option>
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group"><label>Sub
+                                                    category
+                                                    Name</label>
+                                                    <input type="hidden"
+                                                           id="subCatID"
+                                                           value="{{ product_vo_list.product_subcategory_vo.subcategory_id }}">
+
+                                                    <select name="productSubcategoryId"
+                                                            id="productSubcategoryId"
+                                                            class="select2 
+                                                            form-control 
+                                                            mb-0 custom-select select2-hidden-accessible"
+                                                            style="width: 100%; height:36px;"
+                                                            tabindex="-1"
+                                                            aria-hidden="true">
+                                                        <option value="{{ product_vo_list.product_subcategory_vo.subcategory_id }}">
+                                                            {{ row.product_subcategory_vo.subcategory_name }}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group"><label>Product
+                                            Name</label> <input type="text"
+                                                                id="productName"
+                                                                name="productName"
+                                                                class="form-control"
+                                                                required
+                                                                value="{{ product_vo_list.product_name }}">
+                                        </div>
+
+                                        <div class="form-group"><label>Product
+                                            Description</label>
+                                            <div><textarea
+                                                    id="productDescription"
+                                                    name="productDescription"
+                                                    required
+                                                    class="form-control"
+                                                    rows="5">{{ product_vo_list.product_description }}</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group"><label>Product
+                                                    Quantity</label> <input
+                                                        class="form-control"
+                                                        id="productQuantity"
+                                                        name="productQuantity"
+                                                        type="number"
+                                                        id="example-number-input"
+                                                        value="{{ product_vo_list.product_quantity }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group"><label>Product
+                                                    Price</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">₹</span>
+                                                        </div>
+                                                        <input
+                                                                type="text"
+                                                                id="productPrice"
+                                                                name="productPrice"
+                                                                value="{{ product_vo_list.product_price }}"
+                                                                class="form-control"
+                                                                required>
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        Product Color
+                                                    </label>
+                                                    <input type="text"
+                                                           id="productColor"
+                                                           name="productColor"
+                                                           value="{{ product_vo_list.product_color }}"
+                                                           class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        Product Adjustable
+                                                    </label>
+                                                    <input type="text"
+                                                           id="productAdjustable"
+                                                           name="productAdjustable"
+                                                           value="{{ product_vo_list.product_adjustable }}"
+                                                           class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>
+                                                Product Material
+                                            </label>
+                                            <input type="text"
+                                                   id="productMaterial"
+                                                   name="productMaterial"
+                                                   value="{{ product_vo_list.product_material }}"
+                                                   class="form-control">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label>
+                                                Product Image
+                                            </label>
+
+                                            <div class="custom-file">
+                                                <input id="productImage"
+                                                       name="productImage"
+                                                       type="file"
+                                                       class="custom-file-input"
+                                                       accept="image/png,
+                                                                                       image/jpeg, image/jpg">
+                                                <label class="custom-file-label"
+                                                       for="inputGroupFile04">Choose
+                                                    file</label>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-0">
+                                            <div>
+                                                <button type="submit"
+                                                        class="btn btn-secondary waves-effect waves-light">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                        {#                                        {% endfor %}#}
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- end col -->
+                    </div><!-- end row --></div><!-- container --></div>
+            <!-- Page content Wrapper --></div><!-- content -->
+
+        {% include 'admin/footer.html' %}
+
+    </div><!-- End Right content here --></div><!-- END wrapper -->
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/form-validation.init.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>
+{##}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="utf-8">#}
+{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">#}
+{#    <title>Dashor - Responsive Bootstrap 4 Admin Dashboard</title>#}
+{#    <meta content="Admin Dashboard" name="description">#}
+{#    <meta content="themesdesign" name="author">#}
+{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#    <link rel="shortcut icon"#}
+{#          href="../../static/adminResources/image/favicon.ico">#}
+{#    <link href="../../static/adminResources/css/bootstrap.min.css"#}
+{#          rel="stylesheet"#}
+{#          type="text/css">#}
+{#    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"#}
+{#          type="text/css">#}
+{#    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"#}
+{#          type="text/css">#}
+{#    <link href="../../static/adminResources/css/style.css" rel="stylesheet"#}
+{#          type="text/css">#}
+{#    <script type="text/javascript">#}
+{#        document.addEventListener("DOMContentLoaded", function () {#}
+{#            let proj = document.getElementById('productCategoryId');#}
+{#            if ("createEvent" in document) {#}
+{#                var evt = document.createEvent("HTMLEvents");#}
+{#                evt.initEvent("change", false, true);#}
+{#                pobj.dispatchEvent(evt);#}
+{#            } else {#}
+{#                proj.fireEvent("onchange")#}
+{#            }#}
+{#        });#}
+{##}
+{#        function loadSubCategoryProduct() {#}
+{#            var productCategoryId = document.getElementById("productCategoryId");#}
+{#            var productSubcategoryId = document.getElementById("productSubcategoryId");#}
+{##}
+{#            productSubcategoryId.innerHTML = "";#}
+{#            var ajax = new XMLHttpRequest();#}
+{#            ajax.onreadystatechange = function () {#}
+{#                if (ajax.readyState === 4) {#}
+{#                    var json = JSON.parse(ajax.responseText);#}
+{#                    for (var i = 0; i < json.length; i++) {#}
+{#                        var option = document.createElement("option");#}
+{#                        option.value = json[i].subcategory_id;#}
+{#                        option.text = json[i].subcategory_name;#}
+{#                        productSubcategoryId.options.add(option);#}
+{#                    }#}
+{#                    $('#productSubcategoryId').prop('value', $('#subCatID').val())#}
+{#                }#}
+{#            };#}
+{#            ajax.open("get", "/ajax_subcategory_product?productCategoryId=" + productCategoryId.value, true);#}
+{#            ajax.send();#}
+{#        }#}
+{##}
+{#    </script>#}
+{#</head>#}
+{#<body class="fixed-left">#}
+{#<!-- Begin page -->#}
+{#<div id="wrapper">#}
+{#    <!-- ========== Left Sidebar Start ========== -->#}
+{##}
+{#    {% include 'admin/menu.html' %}#}
+{##}
+{#    <!-- Left Sidebar End -->#}
+{#    <!-- Start right Content here -->#}
+{#    <div class="content-page">#}
+{#        <!-- Start content -->#}
+{#        <div class="content">#}
+{#            <!-- Top Bar Start -->#}
+{#            <div class="topbar">#}
+{#                {% include 'admin/header.html' %}#}
+{#            </div>#}
+{#            <!-- Top Bar End -->#}
+{#            <div class="page-content-wrapper">#}
+{#                <div class="container-fluid">#}
+{#                    <div class="row">#}
+{#                        <div class="col-sm-12">#}
+{#                            <div class="page-title-box">#}
+{#                                <div class="float-right">#}
+{##}
+{#                                </div>#}
+{#                                <h4 class="page-title">Product#}
+{#                                    Form</h4>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <!-- end page title end breadcrumb -->#}
+{#                    <div class="row">#}
+{#                        <div class="col-md-12 col-xl-12">#}
+{#                            <div class="card m-b-30">#}
+{#                                <div class="card-body">#}
+{#                                    <form action="/admin_update_product"#}
+{#                                          enctype="multipart/form-data"#}
+{#                                          method="post">#}
+{#                                        {% csrf_token %}#}
+{##}
+{##}
+{#                                        <input type="hidden"#}
+{#                                               name="product_id"#}
+{#                                               value="{{ product_vo_list.product_id }}">#}
+{#                                        <div class="form-group "><label>Category#}
+{#                                            Name</label>#}
+{##}
+{#                                            <select class="select2 form-control mb-3 custom-select select2-hidden-accessible"#}
+{#                                                    style="width: 100%;#}
+{#                                                    height:36px;"#}
+{#                                                    tabindex="-1"#}
+{#                                                    aria-hidden="true"#}
+{#                                                    name="productCategoryId"#}
+{#                                                    id="productCategoryId"#}
+{#                                                    onchange="loadSubCategoryProduct()">#}
+{#                                                <option>Select Category#}
+{#                                                </option>#}
+{##}
+                                                {#                                                <option value="{{ row.product_category_id.category_id }}">{{ row.product_category_id.category_name }}</option>#}
+{#                                                {% for category in category_vo_list %}#}
+{#                                                    {% if product_vo_list.product_category_id.category_id == category.category_id %}#}
+{#                                                        <option value="{{ category.category_id }}"#}
+{#                                                                selected>{{ category.category_name }}</option>#}
+{#                                                    {% else %}#}
+{#                                                        <option value="{{ category.category_id }}">{{ category.category_name }}</option>#}
+{#                                                    {% endif %}#}
+{#                                                {% endfor %}#}
+{#                                            </select>#}
+{#                                        </div>#}
+{##}
+{##}
+{#                                        <div class="form-group"><label>SubcategoryName</label>#}
+{#                                        </div>#}
+{#                                        <input type="hidden"#}
+{#                                               id="subCatID"#}
+{#                                               value="{{ product_vo_list.product_subcategory_id.subcategory_id }}">#}
+{#                                        <select class="select2 form-control mb-3 custom-select select2-hidden-accessible"#}
+{#                                                style="width: 100%;#}
+{#                                                    height:36px;"#}
+{#                                                tabindex="-1"#}
+{#                                                aria-hidden="true"#}
+{#                                                name="productSubcategoryId"#}
+{#                                                id="productSubcategoryId">#}
+{#                                            <option value="{{ product_vo_list.product_subcategory_id.subcategory_id }}">{{ product_vo_list.product_subcategory_id.subcategory_name }}</option>#}
+{#                                        </select>#}
+{##}
+{#                                        <div class="form-group">#}
+{#                                            <label>Product Name</label>#}
+{#                                            <input type="text"#}
+{#                                                   class="form-control"#}
+{#                                                   required#}
+{#                                                   placeholder="Product name"#}
+{#                                                   name="productName"#}
+{#                                                   value="{{ product_vo_list.product_name }}">#}
+{#                                        </div>#}
+{##}
+{#                                        <div class="form-group">#}
+{#                                            <label>Product#}
+{#                                                Description</label>#}
+{#                                            <div>#}
+{#                                                    <textarea required#}
+{#                                                              class="form-control"#}
+{#                                                              rows="5"#}
+{#                                                              name="productDescription"#}
+{#                                                    >{{ product_vo_list.product_description }}</textarea>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
+{#                                        <div class="form-group">#}
+{#                                            <label>Product Quantity</label>#}
+{##}
+{#                                            <input type="number"#}
+{#                                                   class="form-control"#}
+{#                                                   required#}
+{#                                                   placeholder="Product Quantity"#}
+{#                                                   name="productQuantity"#}
+{#                                                   value="{{ product_vo_list.product_quantity }}">#}
+{#                                        </div>#}
+{##}
+{#                                        <label>Product Price</label>#}
+{#                                        <label>Product Price</label>#}
+{##}
+{#                                        <div class="form-group">#}
+{#                                            <input type="number"#}
+{#                                                   class="form-control"#}
+{#                                                   required#}
+{#                                                   placeholder="Product#}
+{#                                                       Price"#}
+{#                                                   name="productPrice"#}
+{#                                                   value="{{ product_vo_list.product_price }}">#}
+{#                                        </div>#}
+{##}
+{#                                        <div class="col-md-12#}
+{#                                            offset-md-12">#}
+{#                                            <label>Product Image</label>#}
+{#                                            <div class="input-group#}
+{#                                                mt-12">#}
+{#                                                <div#}
+{#                                                        class="custom-file">#}
+{#                                                    <input type="file"#}
+{#                                                           class="custom-file-input"#}
+{#                                                           id="inputGroupFile04"#}
+{#                                                           name="product_image"#}
+{#                                                           accept="image/png,image/jpeg"#}
+{#                                                    ><label#}
+{#                                                        class="custom-file-label"#}
+{#                                                        for="inputGroupFile04">Choose#}
+{#                                                    file</label>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
+{#                                        <div class="form-group mb-0">#}
+{#                                            <div>#}
+{#                                                <button type="submit"#}
+{#                                                        class="btn btn-secondary waves-effect waves-light">#}
+{#                                                    Update#}
+{#                                                </button>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
+{#                                    </form>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <!-- end col -->#}
+{##}
+{#                        <!-- end col -->#}
+{#                    </div>#}
+{#                    <!-- end row -->#}
+{#                </div>#}
+{#                <!-- container -->#}
+{#            </div>#}
+{#            <!-- Page content Wrapper -->#}
+{#        </div>#}
+{#        <!-- content -->#}
+{##}
+{#        {% include 'admin/footer.html' %}#}
+{##}
+{#    </div>#}
+{#    <!-- End Right content here -->#}
+{#</div>#}
+{#<!-- END wrapper -->#}
+{#<!-- jQuery  -->#}
+{#<script src="../../static/adminResources/js/jquery.min.js"></script>#}
+{#<script src="../../static/adminResources/js/popper.min.js"></script>#}
+{#<script src="../../static/adminResources/js/bootstrap.min.js"></script>#}
+{#<script src="../../static/adminResources/js/modernizr.min.js"></script>#}
+{#<script src="../../static/adminResources/js/detect.js"></script>#}
+{#<script src="../../static/adminResources/js/fastclick.js"></script>#}
+{#<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>#}
+{#<script src="../../static/adminResources/js/jquery.blockUI.js"></script>#}
+{#<script src="../../static/adminResources/js/waves.js"></script>#}
+{#<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>#}
+{#<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>#}
+{#<!-- Parsley js -->#}
+{#<script src="../../static/adminResources/js/parsley.min.js"></script>#}
+{#<script src="../../static/adminResources/js/form-validation.init.js"></script>#}
+{#<!-- App js -->#}
+{#<script src="../../static/adminResources/js/app.js"></script>#}
+{#</body>#}
+{#</html>#}

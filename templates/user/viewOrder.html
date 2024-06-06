@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img class="img-responsive"
+                                              src="../../static/userResources/image/logo.jpg"
+                                              alt="logo.jpg"/></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+                        <a href="#offcanvas-cart" class="bag offcanvas-toggle"
+                           data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+
+        </div>
+    </div>
+</div>
+
+<!-- OffCanvas Wishlist Start -->
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Wishlist</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/7.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Walnut
+                            Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/9.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Lucky
+                            Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/8.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Fish Cut
+                            Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="buttons">
+                <a href="wishlist.html"
+                   class="btn btn-dark btn-hover-primary mt-30px">view
+                    wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Wishlist End -->
+
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard">Home</a></li>
+                        <li>Order</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- cart area start -->
+<div class="cart-main-area mtb-60px">
+    <div class="container">
+        <h3 class="cart-page-title">Your Orders</h3>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div class="table-content table-responsive cart-table-content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+                            <th>Order Date</th>
+                            <th>Payment Status</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in order_list %}
+                            <input type="hidden"
+                                   value="{{ i.order_product_vo.product_id }}"
+                                   name="product_id">
+
+                            <tr>
+                                <td class="product-name">
+                                    {{ i.order_product_vo.product_name }}</td>
+                                <td class="product-price-cart">₹
+                                    {{ i.order_product_vo.product_price }}</td>
+                                <td class="product-quantity">
+                                    <div>
+                                        {{ i.order_quantity }}
+                                    </div>
+                                </td>
+                                <td class="product-subtotal">₹
+                                    <span class="price">
+                                    {{ i.order_total }}</span>
+                                </td>
+
+                                <td>
+                                    {{ i.order_date }}
+                                </td>
+
+                                <td>
+                                    {% if i.order_status == "Pending" %}
+                                        <button type="button"
+                                                class="btn btn-danger">
+                                            {{ i.order_status }}
+                                        </button>
+                                    {% elif i.order_status == "Paid" %}
+                                        <button type="button"
+                                                class="btn
+                                                    btn-success">Paid
+                                        </button>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <a href="/user_invoice?order_id={{ i.order_id }}"
+                                       type="button"
+                                       class="icon-container"
+                                       style="margin-left: 5px;">
+                                        <i class="fa fa-eye"
+                                           style="color:#666"></i>
+                                    </a>
+                                    <a href="/user_delete_order?order_id={{ i.order_id }}">
+                                        <i class="fa fa-trash" 
+                                           style="margin-left: 15px;"></i></a>
+
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+{#                <div class="row">#}
+{#                    <div class="col-lg-12">#}
+{#                        <div class="cart-shiping-update-wrapper">#}
+{#                            <div class=""></div>#}
+                            {#                            <div class="cart-shiping-update">#}
+                            {#                                <a href="#">Continue Shopping</a>#}
+                            {#                            </div>#}
+{#                            <div class="cart-shiping-update">#}
+{#                                <a href="/thank_you">Generate Invoice</a>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cart area end -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+
+
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
+<script src="assets/js/plugins/countdown.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{##}
+{#<script>#}
+{#    $(document).ready(function () {#}
+{#        // Function to update total#}
+{#        function updateTotal() {#}
+{#            let total = 0;#}
+{#            $(".product-subtotal").each(function () {#}
+{#                let price = parseFloat($(this).find(".price").text());#}
+{#                total += price;#}
+{#            });#}
+{#            $("#total").text("₹ " + total.toFixed(2));#}
+{#        }#}
+{##}
+{#        // Initial total update#}
+{#        updateTotal();#}
+{##}
+{#        // Update total on quantity change#}
+{#        $(".quantity").change(updateTotal);#}
+{#    });#}
+{#</script>#}
+</body>
+</html>

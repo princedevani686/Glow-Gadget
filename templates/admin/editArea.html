@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Dashor - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+          href="../../static/adminResources/image/favicon.ico">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+</head>
+<body class="fixed-left">
+
+
+<!-- Begin page -->
+<div id="wrapper">
+    <!-- ========== Left Sidebar Start ========== -->
+
+    {% include 'admin/menu.html' %}
+
+    <!-- Left Sidebar End -->
+    <!-- Start right Content here -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                {% include 'admin/header.html' %}
+            </div>
+            <!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+
+                                </div>
+                                <h4 class="page-title">Area Form</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+
+                                    <form action="/admin_update_area"
+                                          method="post">
+                                        {% csrf_token %}
+                                        {% for data in area_vo_list %}
+                                            <div class="form-group">
+                                                <input type="hidden"
+                                                       name="area_id"
+                                                       value="{{ data.area_id }}">
+                                                <label>Area Name</label>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       required
+                                                       placeholder="Area name"
+                                                       name="area_name"
+                                                       value="{{ data.area_name }}">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Area Code</label>
+                                                <input type="number"
+                                                       class="form-control"
+                                                       required
+                                                       placeholder="code"
+                                                       name="area_code"
+                                                       value="{{ data.area_code }}">
+                                            </div>
+                                            <div class="form-group mb-0">
+                                                <div>
+                                                    <button type="submit"
+                                                            class="btn btn-secondary waves-effect waves-light">
+                                                        Submit
+                                                    </button>
+                                                    <button type="reset"
+                                                            class="btn btn-danger waves-effect m-l-5">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- Page content Wrapper -->
+        </div>
+        <!-- content -->
+
+        {% include 'admin/footer.html' %}
+
+    </div>
+    <!-- End Right content here -->
+</div>
+<!-- END wrapper -->
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<script src="../../static/adminResources/js/form-validation.init.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+
+</body>
+</html>

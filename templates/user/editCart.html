@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img class="img-responsive"
+                                              src="../../static/userResources/image/logo.jpg"
+                                              alt="logo.jpg"/></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+                        <a href="/user_cart/" class="bag offcanvas-toggle"
+                           data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Wishlist Start -->
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Wishlist</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/7.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Walnut
+                            Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/9.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Lucky
+                            Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="../../static/userResources/image/8.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Fish Cut
+                            Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="buttons">
+                <a href="wishlist.html"
+                   class="btn btn-dark btn-hover-primary mt-30px">view
+                    wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Wishlist End -->
+
+<div class="offcanvas-overlay"></div>
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard">Home</a></li>
+                        <li>Product</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- Shop details Area start -->
+<section class="product-details-area mtb-60px">
+    <div class="container">
+        {% for i in product_list %}
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="product-details-img product-details-tab">
+                        <div class="zoompro-wrap zoompro-2">
+                            <div class="zoompro-border zoompro-span">
+                                <img class="zoompro"
+                                     src="{{ i.product_image.url }}"
+                                     style="height: 600px;width: 660px"
+                                     data-zoom-image="userResources/image/zoom/1.jpg"
+                                     alt=""/>
+                            </div>
+                        </div>
+                        <div id="gallery"
+                             class="product-dec-slider-2 swiper-container">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="product-details-content">
+                        <h2>{{ i.product_name }}{{ login_id }}</h2>
+
+                        <div class="pro-details-rating-wrap">
+                            <div class="rating-product">
+                                <i class="ion-android-star"></i>
+                                <i class="ion-android-star"></i>
+                                <i class="ion-android-star"></i>
+                                <i class="ion-android-star"></i>
+                                <i class="ion-android-star"></i>
+                            </div>
+                            <span class="read-review"><a class="reviews"
+                                                         href="#">Read reviews (1)</a></span>
+                        </div>
+                        <div class="pricing-meta">
+                            <ul>
+                                <li class="old-price not-cut">₹
+                                    {{ i.product_price }}</li>
+                            </ul>
+                        </div>
+                        {% for i in product_list %}
+                            <form action="/user_update_cart/">
+                                {% csrf_token %}
+                                <input type="hidden"
+                                       name="cart_id"
+                                       value="{{ cart_list.cart_id }}">
+                                <input type="hidden"
+                                       name="product_id"
+                                       value="{{ i.product_id }}">
+                                <div class="pro-details-quality">
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box"
+                                               type="text" name="cart_quantity"
+                                        value="1"/>
+                                    </div>
+                                    <div class="pro-details-cart btn-hover">
+                                        <input type="submit" class="btn
+                                        btn-primary btn-lg"
+                                               style="margin-left: 20px"
+                                               value="Add To Cart">
+                                    </div>
+                                </div>
+                            </form>
+                        {% endfor %}
+                        <div class="pro-details-list"
+                             style="padding-bottom: 20px">
+                            <h4 class="mb-1">Disclaimer</h4>
+                            <p>All products are handcrafted and hand-finished;
+                                the actual finish may vary slightly and there
+                                could be slight imperfections.</p>
+                        </div>
+                        <div class="pro-details-list"
+                             style="padding-bottom: 20px">
+                            <h4 class="mb-1">Care</h4>
+                            <p>Clean only with a soft, dry cloth. Avoid the use
+                                of water, chemical or abrasive cleaners.</p>
+                        </div>
+                        <div class="pro-details-policy">
+                            <ul>
+                                <li><img
+                                        src="../../static/userResources/image/policy.png"
+                                        alt=""/><span>Security Policy (Edit With Customer Reassurance Module)</span>
+                                </li>
+                                <li><img
+                                        src="../../static/userResources/image/policy-2.png"
+                                        alt=""/><span>Delivery Policy (Edit With Customer Reassurance Module)</span>
+                                </li>
+                                <li><img
+                                        src="../../static/userResources/image/policy-3.png"
+                                        alt=""/><span>Return Policy (Edit With Customer Reassurance Module)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+<!-- Shop details Area End -->
+<!-- product details description area start -->
+<div class="description-review-area mb-60px">
+    <div class="container">
+        {% for data in product_list %}
+            <div class="description-review-wrapper">
+                <div class="description-review-topbar nav">
+                    <a data-bs-toggle="tab"
+                       href="#des-details1">Description</a>
+                    <a class="active" data-bs-toggle="tab"
+                       href="#des-details2">Product
+                        Details</a>
+                    <a data-bs-toggle="tab" href="#des-details3">Reviews
+                        (2)</a>
+                </div>
+                <div class="tab-content description-review-bottom">
+                    <div id="des-details2" class="tab-pane active">
+                        <div class="product-anotherinfo-wrapper">
+                            <ul>
+                                <li><span style="margin-right: 63px">Shade
+                                    color</span>
+                                    {{ data.product_color }}</li>
+                                <li><span style="margin-right: 
+                                63px">Material</span>
+                                    {{ data.product_material }}
+                                </li>
+                                <li><span style="margin-right:
+                                63px">Adjustable </span>
+                                    {{ data.product_adjustable }}
+                                </li>
+                                <li><span>Assembly Required</span> No
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="des-details1" class="tab-pane">
+                        <div class="product-description-wrapper">
+                            <p>{{ data.product_description }}</p>
+
+                        </div>
+                    </div>
+                    <div id="des-details3" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="review-wrapper">
+                                    <div class="single-review">
+                                        <div class="review-img">
+                                            <img src="../../static/userResources/image/1.png"
+                                                 alt=""/>
+                                        </div>
+                                        <div class="review-content">
+                                            <div class="review-top-wrap">
+                                                <div class="review-left">
+                                                    <div class="review-name">
+                                                        <h4>White Lewis</h4>
+                                                    </div>
+                                                    <div class="rating-product">
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="review-left">
+                                                    <a href="#">Reply</a>
+                                                </div>
+                                            </div>
+                                            <div class="review-bottom">
+                                                <p>
+                                                    Vestibulum ante ipsum
+                                                    primis
+                                                    aucibus orci luctustrices
+                                                    posuere cubilia Curae
+                                                    Suspendisse viverra ed
+                                                    viverra.
+                                                    Mauris ullarper euismod
+                                                    vehicula. Phasellus quam
+                                                    nisi,
+                                                    congue id nulla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-review child-review">
+                                        <div class="review-img">
+                                            <img src="../../static/userResources/image/2.png"
+                                                 alt=""/>
+                                        </div>
+                                        <div class="review-content">
+                                            <div class="review-top-wrap">
+                                                <div class="review-left">
+                                                    <div class="review-name">
+                                                        <h4>White Lewis</h4>
+                                                    </div>
+                                                    <div class="rating-product">
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="review-left">
+                                                    <a href="#">Reply</a>
+                                                </div>
+                                            </div>
+                                            <div class="review-bottom">
+                                                <p>Vestibulum ante ipsum primis
+                                                    aucibus orci luctustrices
+                                                    posuere cubilia Curae Sus
+                                                    pen
+                                                    disse viverra ed viverra.
+                                                    Mauris ullarper euismod
+                                                    vehicula.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratting-<form-wrapper pl-50">
+                                    <h3>Add a Review</h3>
+                                    <div class="ratting-form">
+                                        {#                                        <form action="#">#}
+                                        <div class="star-box">
+                                            <span>Your rating:</span>
+                                            <div class="rating-product">>
+                                                <i class="ion-android-star"></i>
+                                                <i class="ion-android-star"></i>
+                                                <i class="ion-android-star"></i>
+                                                <i class="ion-android-star"></i>
+                                                <i class="ion-android-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="rating-form-style mb-10">
+                                                    <input placeholder="Name"
+                                                           type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="rating-form-style mb-10">
+                                                    <input placeholder="Email"
+                                                           type="email"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="rating-form-style form-submit">
+                                                    <textarea
+                                                            name="Your Review"
+                                                            placeholder="Message"></textarea>
+                                                    <input type="submit"
+                                                           value="Submit"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {#                                        </form>#}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- product details description area end -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">
+                        <!-- Swiper -->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="product-details-content quickview-content">
+                            <h2>Originals Kaval Windbr</h2>
+                            <p class="reference">
+                                Reference:<span> demo_17</span></p>
+                            <div class="pro-details-rating-wrap">
+                                <div class="rating-product">
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                </div>
+                                <span class="read-review"><a class="reviews"
+                                                             href="#">Read reviews (1)</a></span>
+                            </div>
+                            <div class="pricing-meta">
+                                <ul>
+                                    <li class="old-price not-cut">€18.90</li>
+                                </ul>
+                            </div>
+                            <p class="quickview-para">Lorem ipsum dolor sit
+                                amet, consectetur adipisic elit eiusm tempor
+                                incidid ut labore et dolore magna aliqua. Ut
+                                enim ad minim venialo quis nostrud exercitation
+                                ullamco</p>
+                            <div class="pro-details-size-color">
+                                <div class="pro-details-color-wrap">
+                                    <span>Color</span>
+                                    <div class="pro-details-color-content">
+                                        <ul>
+                                            <li class="blue"></li>
+                                            <li class="maroon active"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {% for i in product_list %}
+                                <form action="/user_insert_cart">
+                                    {% csrf_token %}
+                                    <input type="hidden"
+                                           name="product_id"
+                                           value="{{ i.product_id }}">
+                                    <div class="pro-details-quality">
+                                        <div class="cart-plus-minus">
+                                            <input class="cart-plus-minus-box"
+                                                   type="text"
+                                                   name="cart_quantity"
+                                            />
+                                        </div>
+                                        <div class="pro-details-cart btn-hover">
+                                            <input type="submit"
+                                                   value="Add To Cart">
+                                        </div>
+                                    </div>
+                                </form>
+                            {% endfor %}
+                            <div class="pro-details-wish-com">
+                                <div class="pro-details-wishlist">
+                                    <a href="wishlist.html"><i
+                                            class="ion-android-favorite-outline"></i>Add
+                                        to wishlist</a>
+                                </div>
+                                <div class="pro-details-compare">
+                                    <a href="compare.html"><i
+                                            class="ion-ios-shuffle-strong"></i>Add
+                                        to compare</a>
+                                </div>
+                            </div>
+                            <div class="pro-details-social-info">
+                                <span>Share</span>
+                                <div class="social-info">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-google"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i
+                                                    class="ion-social-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+        <script src="assets/js/plugins/swiper.min.js"></script>
+        <script src="assets/js/plugins/countdown.js"></script>
+        <script src="assets/js/plugins/scrollup.js"></script>
+        <script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+
+</header>
+<!-- Header Section End Here -->
+
+<!-- OffCanvas Wishlist Start -->
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Wishlist</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/7.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Walnut
+                            Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/9.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Lucky
+                            Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/8.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Fish Cut
+                            Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="buttons">
+                <a href="wishlist.html"
+                   class="btn btn-dark btn-hover-primary mt-30px">view
+                    wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Wishlist End -->
+
+<!-- OffCanvas Cart Start -->
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Cart</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/1.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Walnut
+                            Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/2.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Lucky
+                            Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="single-product.html" class="image"><img
+                            src="assets/images/product-image/3.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Fish Cut
+                            Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="#" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="sub-total">
+                <strong>Subtotal :</strong>
+                <span class="amount">$144.00</span>
+            </div>
+            <div class="buttons">
+                <a href="cart.html"
+                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                <a href="checkout.html"
+                   class="btn btn-outline-dark current-btn">checkout</a>
+            </div>
+            <p class="minicart-message">Free Shipping on All Orders Over
+                $100!</p>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Cart End -->
+
+<!-- Breadcrumb Area Start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-content">
+                    <ul class="nav">
+                        <li><a href="/user_load_dashboard">Home</a></li>
+                        <li>Order</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End-->
+<!-- checkout area start -->
+<div class="checkout-area mt-60px mb-40px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="billing-info-wrap">
+                    <h3>Billing Details</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">First
+                                    Name</label>
+                                <input type="text"
+                                       value="{{ user_list.user_firstname }}"
+                                       readonly/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">Last
+                                    Name</label>
+                                <input type="text"
+                                       value="{{ user_list.user_lastname }}"
+                                       readonly/>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">Street
+                                    Address</label>
+                                <input class="billing-address"
+                                       value="{{ user_list.user_address }}"
+                                       type="text" readonly/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">
+                                    Area </label>
+                                <input type="text"
+                                       value="{{ user_list.user_area_vo.area_name }}"
+                                       readonly/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">Postcode /
+                                    ZIP</label>
+                                <input type="text"
+                                       value="{{ user_list.user_area_vo.area_code }}"
+                                       readonly/>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="billing-info mb-20px">
+                                <label style="margin-bottom: 10px">Email
+                                    Address</label>
+                                <input type="text"
+                                       value="{{ user_list.user_login_vo.login_username }}"
+                                       readonly/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-md-30px mt-lm-30px ">
+                <div class="your-order-area">
+                    <form action="/user_insert_order/">
+                        {% csrf_token %}
+                        <h3>Your order</h3>
+                        <div class="your-order-wrap gray-bg-4">
+                            <div class="your-order-product-info">
+                                <div class="your-order-top">
+                                    <ul>
+                                        <li>Product</li>
+                                        <li>Total</li>
+                                    </ul>
+                                </div>
+                                <div class="your-order-middle">
+                                    {% for i in cart_detail %}
+                                        <ul>
+                                            <input type="hidden" name="cart_id"
+                                                   value="{{ i.cart_id }}">
+                                            <li><span
+                                                    class="order-middle-left">
+                                        {{ i.product_name }} X {{ i.cart_quantity }}</span>
+                                                <span class="order-price">₹ {{ i.cart_subtotal }}</span>
+                                            </li>
+                                        </ul>
+                                    {% endfor %}
+                                </div>
+                                <div class="your-order-bottom">
+                                    <ul>
+                                        <li class="your-order-shipping">
+                                            Shipping
+                                        </li>
+                                        <li>Free shipping</li>
+                                    </ul>
+                                </div>
+                                <div class="your-order-total">
+                                    <ul>
+                                        <li class="order-total">Total</li>
+                                        <li>₹{{ total_price }}</li>
+                                    </ul>
+                                </div>
+                                <div style="color:black;">
+                                    <h5>
+                                        <input type="radio" name="payment"
+                                               value="Pending"
+                                               style="margin-left: 10px">Cash
+                                        On Delivery
+                                        <input type="radio" name="payment"
+                                               value="Paid"
+                                               style="margin-left: 15px">Net
+                                        Banking
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Place-order mt-25" style="margin-top: 25px">
+                            <button class="w-100">
+                                <a class="btn-hover">Place Order</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- checkout area end -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+
+
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
+<script src="assets/js/plugins/countdown.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
+
+{#<!DOCTYPE html>#}
+{#<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->#}
+{#<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"#}
+{#      lang="en">#}
+{#<head>#}
+{#    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">#}
+{##}
+{#    <meta http-equiv="x-ua-compatible" content="ie=edge">#}
+{#    <title>GlowGadget – LED Lights eCommerce</title>#}
+{#    <meta name="robots" content="noindex, follow">#}
+{#    <meta name="description" content="">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#    <!-- Favicon -->#}
+{#    <link rel="shortcut icon" type="image/x-icon"#}
+{#          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">#}
+{#    <!-- Google Fonts -->#}
+{#    <link href="../../static/userResources/image/css" rel="stylesheet">#}
+{##}
+{#    <!-- CSS#}
+{#============================================ -->#}
+{##}
+{#    <!-- Vendor CSS (Bootstrap & Icon Font) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->#}
+{##}
+{#    <!-- Plugins CSS (All Plugins Files) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->#}
+{##}
+{#    <!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/vendor.min.css"/>#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/plugins.min.css"/>#}
+{#    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">#}
+{##}
+{#    <!-- Main Style CSS -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->#}
+{##}
+{#</head>#}
+{##}
+{#<body>#}
+{#<!-- Header Section Start From Here -->#}
+{#<header class="header-wrapper">#}
+{##}
+{#    {% include 'user/header.html' %}#}
+{##}
+{#</header>#}
+{#<!-- Header Section End Here -->#}
+{##}
+{#<!-- OffCanvas Wishlist Start -->#}
+{#<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">#}
+{#    <div class="inner">#}
+{#        <div class="head">#}
+{#            <span class="title">Wishlist</span>#}
+{#            <button class="offcanvas-close">×</button>#}
+{#        </div>#}
+{#        <div class="body customScroll">#}
+{#            <ul class="minicart-product-list">#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/7.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Walnut#}
+{#                            Cutting Board</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/9.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Lucky#}
+{#                            Wooden Elephant</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/8.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Fish Cut#}
+{#                            Out Set</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#        <div class="foot">#}
+{#            <div class="buttons">#}
+{#                <a href="wishlist.html"#}
+{#                   class="btn btn-dark btn-hover-primary mt-30px">view#}
+{#                    wishlist</a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- OffCanvas Wishlist End -->#}
+{##}
+{#<!-- OffCanvas Cart Start -->#}
+{#<div id="offcanvas-cart" class="offcanvas offcanvas-cart">#}
+{#    <div class="inner">#}
+{#        <div class="head">#}
+{#            <span class="title">Cart</span>#}
+{#            <button class="offcanvas-close">×</button>#}
+{#        </div>#}
+{#        <div class="body customScroll">#}
+{#            <ul class="minicart-product-list">#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/1.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Walnut#}
+{#                            Cutting Board</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/2.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Lucky#}
+{#                            Wooden Elephant</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="single-product.html" class="image"><img#}
+{#                            src="assets/images/product-image/3.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="single-product.html" class="title">Fish Cut#}
+{#                            Out Set</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>#}
+{#                        <a href="#" class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#        <div class="foot">#}
+{#            <div class="sub-total">#}
+{#                <strong>Subtotal :</strong>#}
+{#                <span class="amount">$144.00</span>#}
+{#            </div>#}
+{#            <div class="buttons">#}
+{#                <a href="cart.html"#}
+{#                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>#}
+{#                <a href="checkout.html"#}
+{#                   class="btn btn-outline-dark current-btn">checkout</a>#}
+{#            </div>#}
+{#            <p class="minicart-message">Free Shipping on All Orders Over#}
+{#                $100!</p>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- OffCanvas Cart End -->#}
+{##}
+{#<!-- Breadcrumb Area Start -->#}
+{#<div class="breadcrumb-area">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <div class="breadcrumb-content">#}
+{#                    <ul class="nav">#}
+{#                        <li><a href="/user_load_dashboard/">Home</a></li>#}
+{#                        <li>Order</li>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Breadcrumb Area End-->#}
+{#<!-- checkout area start -->#}
+{#<div class="checkout-area mt-60px mb-40px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-7">#}
+{#                <div class="billing-info-wrap">#}
+{#                    <h3>Billing Details</h3>#}
+{#                    <div class="row">#}
+{#                        <div class="col-lg-6 col-md-6">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px">First #}
+{#                                    Name</label>#}
+{#                                <input type="text"#}
+{#                                       value="{{ user_list.user_firstname }}" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-lg-6 col-md-6">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px">Last Name</label>#}
+{#                                <input type="text"#}
+{#                                        value="{{ user_list.user_lastname }}" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                        <div class="col-lg-12">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px">Street Address</label>#}
+{#                                <input class="billing-address"#}
+{#                                       value="123"#}
+{#                                       type="text" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-lg-6 col-md-6">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px"> Area </label>#}
+{#                                <input type="text"#}
+{#                                value="{{ user_list.user_area_id }}" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-lg-6 col-md-6">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px">Postcode / ZIP</label>#}
+{#                                <input type="text"#}
+{#                                value="11" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-lg-12">#}
+{#                            <div class="billing-info mb-20px">#}
+{#                                <label style="margin-bottom: 10px">Email Address</label>#}
+{#                                <input type="text"#}
+{#                                value="#}
+{#{{ user_list.user_login_vo.login_username }}" readonly/>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-lg-5 mt-md-30px mt-lm-30px ">#}
+{#                <div class="your-order-area">#}
+{#                    <h3>Your order</h3>#}
+{#                    <div class="your-order-wrap gray-bg-4">#}
+{#                        <div class="your-order-product-info">#}
+{#                            <div class="your-order-top">#}
+{#                                <ul>#}
+{#                                    <li>Product</li>#}
+{#                                    <li>Total</li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="your-order-middle">#}
+{#                                {% for i in cart_detail %}#}
+{#                                <ul>#}
+{#                                    <li><span #}
+{#                                            class="order-middle-left">#}
+{#                                        {{ i.prduct_name }}</span>#}
+{#                                        <span class="order-price">{{ i.cart_subtotal }} #}
+{#                                        </span>#}
+{#                                    </li>#}
+{#                                    #}
+{#                                </ul>#}
+{#                                {% endfor %}#}
+{#                            </div>#}
+{#                            <div class="your-order-bottom">#}
+{#                                <ul>#}
+{#                                    <li class="your-order-shipping">Shipping#}
+{#                                    </li>#}
+{#                                    <li>Free shipping</li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="your-order-total">#}
+{#                                <ul>#}
+{#                                    <li class="order-total">Total</li>#}
+{#                                    <li>$329</li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="Place-order mt-25">#}
+{#                        <a class="btn-hover" href="#">Place Order</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- checkout area end -->#}
+{#<!-- Footer Area Start -->#}
+{#{% include 'user/footer.html' %}#}
+{#<!-- Footer Area End -->#}
+{##}
+{##}
+{#<!-- Modal end -->#}
+{#<!-- JS#}
+{#============================================ -->#}
+{##}
+{#<!-- Vendors JS -->#}
+{#<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>#}
+{#<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>#}
+{#<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>#}
+{#<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->#}
+{##}
+{#<!-- Plugins JS -->#}
+{#<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>#}
+{#<script src="assets/js/plugins/swiper.min.js"></script>#}
+{#<script src="assets/js/plugins/countdown.js"></script>#}
+{#<script src="assets/js/plugins/scrollup.js"></script>#}
+{#<script src="assets/js/plugins/elevateZoom.js"></script> -->#}
+{##}
+{#<!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#<script src="../../static/userResources/js/vendor.min.js"></script>#}
+{#<script src="../../static/userResources/js/plugins.min.js"></script>#}
+{##}
+{#<!-- Main Activation JS -->#}
+{#<script src="../../static/userResources/js/main.js"></script>#}
+{#<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>#}
+{#</body>#}
+{#</html>#}

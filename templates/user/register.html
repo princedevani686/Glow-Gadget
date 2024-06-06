@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Dashor - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+          href="../../static/adminResources/image/favicon.ico">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+</head>
+<body class="fixed-left"><!-- Begin page -->
+<!--<div class="accountbg"></div>-->
+<div id="stars"></div>
+<div id="stars2"></div>
+<div class="wrapper-page">
+    <div class="card">
+        <div class="card-body"><h3 class="text-center mt-0"><a
+                href="../admin/index.html" class="logo logo-admin"><b><span
+                style="color: rgba(89, 206, 181, .6);">Glow</span>Gadget</b></a>
+        </h3><h6 class="text-center">Create An
+            Account
+        </h6>
+            <div class="p-3">
+                <form class="form-horizontal"
+                      action="/user_insert_register" method="post">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <div class="col-6"><input class="form-control"
+                                                  type="text" required=""
+                                                  placeholder="First Name"
+                                                  name="userFirstname"
+                                                  id="userFirstname">
+                        </div>
+                        <div class="col-6"><input class="form-control"
+                                                  type="text" required=""
+                                                  placeholder="Last Name"
+                                                  name="userLastname"
+                                                  id="userLastname">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 ">
+                            <select class="form-control"
+                                    name="userArea" id="userArea">
+                                <option selected value="none">
+                                    Select Area
+                                </option>
+                                {% for row in area_vo_list %}
+                                    <option value="{{ row.area_id }}">{{ row.area_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn-group-toggle mt-2 d-flex bd-highlight">
+                                <div class="mr-2 ml-3">
+                                    <input id="male"
+                                           class="radio-custom"
+                                           type="radio"
+                                           name="userGender"
+                                           value="male">
+                                    <label for="male"
+                                           class="radio-custom-label">Male</label>
+                                </div>
+                                <div class="ml-1 ml-3">
+                                    <input id="female"
+                                           class="radio-custom"
+                                           type="radio"
+                                           name="userGender"
+                                           value="female">
+                                    <label for="female"
+                                           class="radio-custom-label">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <textarea
+                                    class="form-control"
+                                    type=""
+                                    id="userAddress"
+                                    name="userAddress"
+                                    required=""
+                                    placeholder="userAddress"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12"><input class="form-control"
+                                                   type="text" required=""
+                                                   placeholder="Username"
+                                                   name="loginUsername"
+                                                   id="loginUsername">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12"><input class="form-control"
+                                                   type="password" required=""
+                                                   placeholder="Password"
+                                                   id="loginPassword"
+                                                   name="loginPassword">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <div class="custom-control custom-checkbox"><input
+                                    type="checkbox"
+                                    class="custom-control-input"
+                                    id="customCheck1"> <label
+                                    class="custom-control-label font-weight-normal"
+                                    for="customCheck1">I accept <a
+                                    href="#" class="text-muted">Terms and
+                                Conditions</a></label></div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center row m-t-20">
+                        <div class="col-12">
+                            <button class="btn btn-danger btn-block waves-effect waves-light"
+                                    type="submit">Register
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group m-t-10 mb-0 row">
+                        <div class="col-12 m-t-20
+                        text-center">Already
+                            have accounts?<a
+                                    href="/"
+                                    class="text-muted"> Login</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>

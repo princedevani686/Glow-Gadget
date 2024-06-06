@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GlowGadget – LED Lights eCommerce</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">
+    <!-- Google Fonts -->
+    <link href="../../static/userResources/image/css" rel="stylesheet">
+
+    <!-- CSS
+============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet"
+          href="../../static/userResources/css/vendor.min.css"/>
+    <link rel="stylesheet"
+          href="../../static/userResources/css/plugins.min.css"/>
+    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">
+    {#    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"#}
+    {#          rel="stylesheet"#}
+    {#          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"#}
+    {#          crossorigin="anonymous">#}
+
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->
+</head>
+
+<body>
+<!-- Header Section Start From Here -->
+<header class="header-wrapper">
+
+    {% include 'user/header.html' %}
+    <!-- header menu -->
+</header>
+<!-- Header Section End Here -->
+
+<!-- Mobile Header Section Start -->
+<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="https://htmldemo.net/rozer/rozer/index.html"><img
+                            class="img-responsive"
+                            src="../../static/userResources/image/logo.jpg"
+                            alt="logo.jpg"></a>
+                </div>
+            </div>
+            <!-- Header Logo End -->
+
+            <!-- Header Tools Start -->
+            <div class="col-auto">
+                <div class="header-tools justify-content-end">
+                    <div class="cart-info d-flex align-self-center">
+
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#offcanvas-cart"
+                           class="bag offcanvas-toggle" data-number="3"><i
+                                class="icon-bag"></i><span>$20.00</span></a>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#offcanvas-mobile-menu"
+                           class="offcanvas-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                      id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                      id="bottom"
+                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Tools End -->
+        </div>
+    </div>
+</div>
+<!-- Mobile Header Section End -->
+<!-- OffCanvas Wishlist Start -->
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Wishlist</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/1(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Walnut Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/2(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Lucky Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/3.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Fish Cut Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="buttons">
+                <a href="https://htmldemo.net/rozer/rozer/wishlist.html"
+                   class="btn btn-dark btn-hover-primary mt-30px">view
+                    wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Wishlist End -->
+
+<!-- OffCanvas Cart Start -->
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Cart</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <div class="body customScroll">
+            <ul class="minicart-product-list">
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/1(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Walnut Cutting Board</a>
+                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/2(1).jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Lucky Wooden Elephant</a>
+                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                       class="image"><img
+                            src="../../static/userResources/image/3.jpg"
+                            alt="Cart product Image"></a>
+                    <div class="content">
+                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"
+                           class="title">Fish Cut Out Set</a>
+                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
+                        <a href="https://htmldemo.net/rozer/rozer/index.html#"
+                           class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="sub-total">
+                <strong>Subtotal :</strong>
+                <span class="amount">$144.00</span>
+            </div>
+            <div class="buttons">
+                <a href="https://htmldemo.net/rozer/rozer/cart.html"
+                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                <a href="https://htmldemo.net/rozer/rozer/checkout.html"
+                   class="btn btn-outline-dark current-btn">checkout</a>
+            </div>
+            <p class="minicart-message">Free Shipping on All Orders Over
+                $100!</p>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Cart End -->
+
+<!-- OffCanvas Search Start -->
+<div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+    <div class="inner customScroll">
+        <div class="head">
+            <span class="title">&nbsp;</span>
+            <button class="offcanvas-close" fdprocessedid="13uka8">×</button>
+        </div>
+        <div class="offcanvas-menu-search-form">
+            <form action="https://htmldemo.net/rozer/rozer/index.html#">
+                <input type="text" placeholder="Search..."
+                       fdprocessedid="oitx8q">
+                <button fdprocessedid="0epusr"><i class="icon-magnifier"></i>
+                </button>
+            </form>
+        </div>
+        <div class="offcanvas-menu">
+            <ul>
+                <li><span class="menu-expand"></span><a
+                        href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                        class="menu-text">Home</span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/index.html"><span
+                                    class="menu-text">Home 1</span></a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/index-2.html"><span
+                                    class="menu-text">Home 2</span></a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/index-3.html"><span
+                                    class="menu-text">Home 3</span></a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/index-4.html"><span
+                                    class="menu-text">Home 4</span></a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-expand"></span><a
+                        href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                        class="menu-text">Shop</span></a>
+                    <ul class="sub-menu">
+                        <li><span class="menu-expand"></span>
+                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                    class="menu-text">Shop Grid</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-3-column.html">Shop
+                                        Grid 3 Column</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html">Shop
+                                        Grid 4 Column</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-left-sidebar.html">Shop
+                                        Grid Left Sidebar</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-right-sidebar.html">Shop
+                                        Grid Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-expand"></span>
+                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                    class="menu-text">Shop List</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-list.html">Shop
+                                        List</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-list-left-sidebar.html">Shop
+                                        List Left Sidebar</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/shop-list-right-sidebar.html">Shop
+                                        List Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-expand"></span>
+                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                    class="menu-text">Shop Single</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product.html">Shop
+                                        Single</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-variable.html">Shop
+                                        Variable</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-affiliate.html">Shop
+                                        Affiliate</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-group.html">Shop
+                                        Group</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-tabstyle-2.html">Shop
+                                        Tab 2</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-tabstyle-3.html">Shop
+                                        Tab 3</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-expand"></span>
+                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                    class="menu-text">Shop Single</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-slider.html">Shop
+                                        Slider</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-gallery-left.html">Shop
+                                        Gallery Left</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-gallery-right.html">Shop
+                                        Gallery Right</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-sticky-left.html">Shop
+                                        Sticky Left</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/single-product-sticky-right.html">Shop
+                                        Sticky Right</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="menu-expand"></span><a
+                        href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                        class="menu-text">Pages</span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/about.html">About
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/cart.html">Cart
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/checkout.html">Checkout
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/compare.html">Compare
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/login.html">Login
+                                &amp; Register Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/my-account.html">Account
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/wishlist.html">Wishlist
+                                Page</a></li>
+                        <li>
+                            <a href="https://htmldemo.net/rozer/rozer/thank-you-page.html">Thank You Page</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-expand"></span><a
+                        href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                        class="menu-text">Blog</span></a>
+                    <ul class="sub-menu">
+                        <li><span class="menu-expand"></span><a
+                                href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                class="menu-text">Blog Grid</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-grid-left-sidebar.html">Blog
+                                        Grid Left Sidebar</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-grid-right-sidebar.html">Blog
+                                        Grid Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-expand"></span><a
+                                href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                class="menu-text">Blog List</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-list-left-sidebar.html">Blog
+                                        List Left Sidebar</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-list-right-sidebar.html">Blog
+                                        List Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-expand"></span><a
+                                href="https://htmldemo.net/rozer/rozer/index.html#"><span
+                                class="menu-text">Blog Single</span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-single-left-sidebar.html">Blog
+                                        Single Left Sidebar</a></li>
+                                <li>
+                                    <a href="https://htmldemo.net/rozer/rozer/blog-single-right-sidebar.html">Blog
+                                        Single Right Sidbar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://htmldemo.net/rozer/rozer/contact.html">Contact
+                    Us</a></li>
+            </ul>
+        </div>
+        <div class="offcanvas-buttons mt-30px">
+            <div class="header-tools d-flex">
+                <div class="cart-info d-flex align-self-center">
+                    <a href="https://htmldemo.net/rozer/rozer/my-account.html"
+                       class="user"><i class="icon-user"></i></a>
+                    <a href="https://htmldemo.net/rozer/rozer/wishlist.html"
+                       data-number="3"><i class="icon-heart"></i></a>
+                    <a href="https://htmldemo.net/rozer/rozer/cart.html"
+                       data-number="3"><i class="icon-bag"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-social mt-30px">
+            <ul>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                            class="icon-social-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                            class="icon-social-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                            class="icon-social-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                            class="icon-social-google"></i></a>
+                </li>
+                <li>
+                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                            class="icon-social-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Search End -->
+
+<div class="offcanvas-overlay"></div>
+
+<!-- Slider Start -->
+<div class="slider-area slider-height-1">
+    <div class="hero-slider swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+        <div class="swiper-wrapper"
+             id="swiper-wrapper-f8cabffd1fe7e10ef" aria-live="off"
+             style="transition-duration: 0ms; transform:
+                     translate3d(-4647px, 0px, 0px);">
+            <div
+                    class="swiper-slide bg-img d-flex swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+                    style="background-image: url(../../static/userResources/image/sample-1.jpg); width: 1519px; margin-right: 30px;"
+                    data-swiper-slide-index="1" role="group"
+                    aria-label="2 / 2">
+                <div class="container align-self-center">
+                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">
+                        <span class="animated color-gray">PRODUCT SPOTLIGHT</span>
+                        <h1 class="animated color-black">
+                            <strong>Brighter Experience</strong>
+                        </h1>
+                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"
+                           class="shop-btn animated">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slider  -->
+            <div
+                    class="swiper-slide bg-img d-flex swiper-slide-duplicate-active"
+                    style="background-image: url(../../static/userResources/image/aa.jpg); width: 1519px; 
+                    margin-right:
+                    30px;"
+                    data-swiper-slide-index="0" role="group"
+                    aria-label="1 / 2">
+                <div class="container align-self-center">
+                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">
+                        <span class="animated color-gray">PRODUCT SPOTLIGHT</span>
+                        <h1 class="animated color-black">
+                             <br>
+                            <strong>Downlight Reflector</strong>
+                        </h1>
+                        <a href="/user_products"
+                           class="shop-btn animated">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slider  -->
+            <div
+                    class="swiper-slide bg-img d-flex swiper-slide-prev swiper-slide-duplicate-next"
+                    style="background-image: url(../../static/userResources/image/abc2.jpeg); width: 1519px;
+                    margin-right:
+                    30px;"
+                    data-swiper-slide-index="1" role="group"
+                    aria-label="2 / 2">
+                <div class="container align-self-center">
+                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">
+                        <span class="animated color-gray">PRODUCT SPOTLIGHT</span>
+                        <h1 class="animated color-black"><br>
+                            <strong>Brighter Experience</strong>
+                        </h1>
+                        <a href="/user_products"
+                           class="shop-btn animated">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slider  -->
+            <div class="swiper-slide bg-img d-flex swiper-slide-duplicate swiper-slide-active"
+                 style="
+                 background-image: url(../.
+                 ./static/userResources/image/sample-2.jpg); width: 1519px; margin-right: 30px;"
+                 data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+                <div class="container align-self-center">
+                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">
+                        <span class="animated color-gray">NEW DESIGN FEATURES</span>
+                        <h1 class="animated color-black">
+                            Hamsung Galaxy <br>
+                            <strong>S10+ Edge</strong>
+                        </h1>
+                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"
+                           class="shop-btn animated">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+                class="swiper-pagination-bullet" tabindex="0" role="button"
+                aria-label="Go to slide 2"></span></div>
+        <span class="swiper-notification" aria-live="assertive"
+              aria-atomic="true"></span></div>
+</div>
+<!-- Slider End -->
+<!-- Static Area Start -->
+<div class="static-area mtb-60px">
+    <div class="container">
+        <div class="static-area-wrap">
+            <div class="row">
+                <!-- Static Single Item Start -->
+                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-md-30px mb-lm-30px">
+                    <div class="single-static" style="margin-left: 30px">
+                        <img src="../../static/userResources/image/static-icons-1.png"
+                             alt="" class="img-responsive">
+                        <div class="single-static-meta">
+                            <h4>Free Shipping</h4>
+                            <p>On all orders over $75.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Static Single Item End -->
+                <!-- Static Single Item Start -->
+                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-md-30px mb-lm-30px">
+                    <div class="single-static" style="margin-left: 30px">
+                        <img src="../../static/userResources/image/static-icons-2.png"
+                             alt="" class="img-responsive">
+                        <div class="single-static-meta">
+                            <h4>Free Returns</h4>
+                            <p>Returns are free within 9 days</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Static Single Item End -->
+                <!-- Static Single Item Start -->
+                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-sm-30px">
+                    <div class="single-static" style="margin-left: 30px">
+                        <img src="../../static/userResources/image/static-icons-4.png"
+                             alt="" class="img-responsive">
+                        <div class="single-static-meta">
+                            <h4>Support 24/7</h4>
+                            <p>Contact us 24 hours a day</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Static Single Item End -->
+                <!-- Static Single Item Start -->
+                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
+                    <div class="single-static" style="margin-left: 30px">
+                        <img src="../../static/userResources/image/static-icons-3.png"
+                             alt="" class="img-responsive">
+                        <div class="single-static-meta">
+                            <h4>100% Payment Secure</h4>
+                            <p>Your payment are safe with us.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Static Single Item End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Static Area End -->
+<!-- category Area Start -->
+<div class="popular-categories-area mt-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title" style="margin-left: 20px">
+                    <h2 class="section-heading">Popular Categories</h2>
+                </div>
+            </div>
+        </div>
+        <div class="category-slider slider-nav-style-1 swiper-initialized swiper-horizontal swiper-pointer-events">
+            <div class="category-slider-wrapper swiper-wrapper"
+                 id="swiper-wrapper-4c10f7cf12a0b92f4" aria-live="polite"
+                 style="transform: translate3d(0px, 0px, 0px); margin-left: 15px">
+                {% for i in category_list %}
+                    <div class="category-slider-item swiper-slide swiper-slide-active"
+                         role="group"
+                         style="width: 258px; margin-right: 30px;">
+                        <div class="thumb-category">
+                            <a href="/user_load_subcategory?category_id={{ i.category_id }}">
+                                <img src="{{ i.category_image.url }}"
+                                     width="258px"
+                                     height="258px"
+                                     alt="product-image.jpg">
+                            </a>
+                        </div>
+                        <div class="category-discript mb-3">
+                            <h4>{{ i.category_name }}</h4>
+
+                            <a href="/user_load_subcategory?category_id={{ i.category_id }}"
+                               class="view-all-btn">View All</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-buttons">
+                <div class="swiper-button-next" tabindex="0" role="button"
+                     aria-label="Next slide"
+                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"
+                     aria-disabled="false"></div>
+                <div class="swiper-button-prev swiper-button-disabled"
+                     tabindex="-1" role="button" aria-label="Previous slide"
+                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"
+                     aria-disabled="true">
+
+                </div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive"
+                  aria-atomic="true"></span>
+        </div>
+
+    </div>
+</div>
+<!-- category Area End -->
+<!-- Deal Area Start -->
+<div class="deal-area bg-light-gray pt-60px pb-30px">
+    <!-- Banner Area Start -->
+    <div class="banner-area mt-30px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-wrapper">
+                        <a href="/user_product"><img
+                                src="../../static/userResources/image/aa(1).jpg"
+                                width="507"
+                                height="190"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End -->
+</div>
+<!-- Deal Area End -->
+<!-- Brand area start -->
+<div class="brand-area mb-60px">
+    <div class="container">
+        <div class="brand-slider slider-nav-style-1 slider-nav-style-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+            <div class="brand-slider-wrapper swiper-wrapper"
+                 id="swiper-wrapper-eb5d2d155991b713" aria-live="polite"
+                 style="transform: translate3d(0px, 0px, 0px);">
+                <div class="brand-slider-item swiper-slide swiper-slide-active"
+                     role="group" aria-label="1 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/1(3).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide swiper-slide-next"
+                     role="group" aria-label="2 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/2(3).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide" role="group"
+                     aria-label="3 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/3(2).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide" role="group"
+                     aria-label="4 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/4(2).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide" role="group"
+                     aria-label="5 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/5(2).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide" role="group"
+                     aria-label="6 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/1(3).jpg"
+                            alt=""></a>
+                </div>
+                <div class="brand-slider-item swiper-slide" role="group"
+                     aria-label="7 / 7"
+                     style="width: 257.6px; margin-right: 30px;">
+                    <a href="/user_load_category"><img
+                            src="../../static/userResources/image/2(3).jpg"
+                            alt=""></a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-buttons">
+                <div class="swiper-button-next" tabindex="0" role="button"
+                     aria-label="Next slide"
+                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"
+                     aria-disabled="false"></div>
+                <div class="swiper-button-prev swiper-button-disabled"
+                     tabindex="-1" role="button" aria-label="Previous slide"
+                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"
+                     aria-disabled="true"></div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive"
+                  aria-atomic="true"></span></div>
+    </div>
+</div>
+<!-- Brand area end -->
+<!-- Banner Area Start -->
+<div class="banner-area mb-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="banner-wrapper">
+                    <a href=""><img
+                            src="../../static/userResources/image/aa1.jpeg"
+                            width="690"
+                            height="220"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="banner-wrapper">
+                    <a href=""><img
+                            src="../../static/userResources/image/bb.jpeg"
+                            width="690"
+                            height="220"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Area End -->
+<!-- Footer Area Start -->
+{% include 'user/footer.html' %}
+<!-- Footer Area End -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">
+                        <!-- Swiper -->
+                        <div class="swiper-container gallery-top swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper"
+                                 id="swiper-wrapper-3f8caf2d15e7d759"
+                                 aria-live="polite"
+                                 style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide swiper-slide-active"
+                                     role="group" aria-label="1 / 4"
+                                     style="width: 339px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-next"
+                                     role="group" aria-label="2 / 4"
+                                     style="width: 339px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide" role="group"
+                                     aria-label="3 / 4" style="width: 339px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide" role="group"
+                                     aria-label="4 / 4" style="width: 339px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                            <span class="swiper-notification"
+                                  aria-live="assertive"
+                                  aria-atomic="true"></span></div>
+                        <div class="swiper-container gallery-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-thumbs">
+                            <div class="swiper-wrapper"
+                                 id="swiper-wrapper-151b91274fbe1ccd"
+                                 aria-live="polite"
+                                 style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active"
+                                     role="group" aria-label="1 / 4"
+                                     style="width: 77.25px; margin-right: 10px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/11.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-next"
+                                     role="group" aria-label="2 / 4"
+                                     style="width: 77.25px; margin-right: 10px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/12.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible"
+                                     role="group" aria-label="3 / 4"
+                                     style="width: 77.25px; margin-right: 10px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/13.jpg"
+                                         alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible"
+                                     role="group" aria-label="4 / 4"
+                                     style="width: 77.25px; margin-right: 10px;">
+                                    <img class="img-responsive m-auto"
+                                         src="../../static/userResources/image/14.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                            <span class="swiper-notification"
+                                  aria-live="assertive"
+                                  aria-atomic="true"></span></div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="product-details-content quickview-content">
+                            <h2>Originals Kaval Windbr</h2>
+                            <p class="reference">
+                                Reference:<span> demo_17</span></p>
+                            <div class="pro-details-rating-wrap">
+                                <div class="rating-product">
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                    <i class="ion-android-star"></i>
+                                </div>
+                                <span class="read-review"><a class="reviews"
+                                                             href="https://htmldemo.net/rozer/rozer/index.html#">Read reviews (1)</a></span>
+                            </div>
+                            <div class="pricing-meta">
+                                <ul>
+                                    <li class="old-price not-cut">€18.90</li>
+                                </ul>
+                            </div>
+                            <p class="quickview-para">Lorem ipsum dolor sit
+                                amet, consectetur adipisic elit eiusm tempor
+                                incidid ut labore et dolore magna aliqua. Ut
+                                enim ad minim venialo quis nostrud exercitation
+                                ullamco</p>
+                            <div class="pro-details-size-color">
+                                <div class="pro-details-color-wrap">
+                                    <span>Color</span>
+                                    <div class="pro-details-color-content">
+                                        <ul>
+                                            <li class="blue"></li>
+                                            <li class="maroon active"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-details-quality">
+                                <div class="cart-plus-minus">
+                                    <div class="dec qtybutton">-</div>
+                                    <input class="cart-plus-minus-box"
+                                           type="text" name="qtybutton"
+                                           value="1">
+                                    <div class="inc qtybutton">+</div>
+                                </div>
+                                <div class="pro-details-cart btn-hover">
+                                    <a href="https://htmldemo.net/rozer/rozer/index.html#">
+                                        + Add To Cart</a>
+                                </div>
+                            </div>
+                            <div class="pro-details-wish-com">
+                                <div class="pro-details-wishlist">
+                                    <a href="https://htmldemo.net/rozer/rozer/wishlist.html"><i
+                                            class="ion-android-favorite-outline"></i>Add
+                                        to wishlist</a>
+                                </div>
+                                <div class="pro-details-compare">
+                                    <a href="https://htmldemo.net/rozer/rozer/compare.html"><i
+                                            class="ion-ios-shuffle-strong"></i>Add
+                                        to compare</a>
+                                </div>
+                            </div>
+                            <div class="pro-details-social-info">
+                                <span>Share</span>
+                                <div class="social-info">
+                                    <ul>
+                                        <li>
+                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                                                    class="ion-social-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                                                    class="ion-social-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                                                    class="ion-social-google"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i
+                                                    class="ion-social-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
+<!-- JS
+============================================ -->
+
+<!-- Vendors JS -->
+<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->
+
+<!-- Plugins JS -->
+<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
+<script src="assets/js/plugins/countdown.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/elevateZoom.js"></script> -->
+
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<script src="../../static/userResources/js/vendor.min.js"></script>
+<script src="../../static/userResources/js/plugins.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="../../static/userResources/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+<a id="scrollUp" href="https://htmldemo.net/rozer/rozer/index.html#top"
+   style="display: none; position: fixed; z-index: 2147483647;"><i
+        class="ion-android-arrow-up"></i></a><span
+        id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body>
+</html>
+{#<!DOCTYPE html>#}
+{#<!-- saved from url=(0043)https://htmldemo.net/rozer/rozer/index.html -->#}
+{#<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"#}
+{#      lang="en">#}
+{#<head>#}
+{#    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">#}
+{##}
+{#    <meta http-equiv="x-ua-compatible" content="ie=edge">#}
+{#    <title>GlowGadget – LED Lights eCommerce</title>#}
+{#    <meta name="robots" content="noindex, follow">#}
+{#    <meta name="description" content="">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#    <!-- Favicon -->#}
+{#    <link rel="shortcut icon" type="image/x-icon"#}
+{#          href="https://htmldemo.net/rozer/rozer/assets/images/favicon/favicon.png">#}
+{#    <!-- Google Fonts -->#}
+{#    <link href="../../static/userResources/image/css" rel="stylesheet">#}
+{##}
+{#    <!-- CSS#}
+{#============================================ -->#}
+{##}
+{#    <!-- Vendor CSS (Bootstrap & Icon Font) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">#}
+{#   <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css"> -->#}
+{##}
+{#    <!-- Plugins CSS (All Plugins Files) -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">#}
+{#   <link rel="stylesheet" href="assets/css/plugins/swiper.css">  -->#}
+{##}
+{#    <!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/vendor.min.css"/>#}
+{#    <link rel="stylesheet"#}
+{#          href="../../static/userResources/css/plugins.min.css"/>#}
+{#    <link rel="stylesheet" href="../../static/userResources/css/style.min.css">#}
+    {#    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"#}
+    {#          rel="stylesheet"#}
+    {#          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"#}
+    {#          crossorigin="anonymous">#}
+{##}
+{##}
+{#    <!-- Main Style CSS -->#}
+{#    <!-- <link rel="stylesheet" href="assets/css/style.css" />     -->#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<!-- Header Section Start From Here -->#}
+{#<header class="header-wrapper">#}
+{##}
+{#    {% include 'user/header.html' %}#}
+{#    <!-- header menu -->#}
+{#</header>#}
+{#<!-- Header Section End Here -->#}
+{##}
+{#<!-- Mobile Header Section Start -->#}
+{#<div class="mobile-header d-xl-none sticky-nav bg-white ptb-10px">#}
+{#    <div class="container">#}
+{#        <div class="row align-items-center">#}
+{##}
+{#            <!-- Header Logo Start -->#}
+{#            <div class="col">#}
+{#                <div class="header-logo">#}
+{#                    <a href="#"><img#}
+{#                            class="img-responsive"#}
+{#                            src="../../static/userResources/image/logo.jpg"#}
+{#                            alt="logo.jpg"></a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Header Logo End -->#}
+{##}
+{#            <!-- Header Tools Start -->#}
+{#            <div class="col-auto">#}
+{#                <div class="header-tools justify-content-end">#}
+{#                    <div class="cart-info d-flex align-self-center">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/compare.html"#}
+{#                           class="shuffle d-xs-none" data-number="3"><i#}
+{#                                class="icon-shuffle"></i></a>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#offcanvas-wishlist"#}
+{#                           class="heart offcanvas-toggle d-xs-none"#}
+{#                           data-number="3"><i class="icon-heart"></i></a>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#offcanvas-cart"#}
+{#                           class="bag offcanvas-toggle" data-number="3"><i#}
+{#                                class="icon-bag"></i><span>$20.00</span></a>#}
+{#                    </div>#}
+{#                    <div class="mobile-menu-toggle">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#offcanvas-mobile-menu"#}
+{#                           class="offcanvas-toggle">#}
+{#                            <svg viewBox="0 0 800 600">#}
+{#                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"#}
+{#                                      id="top"></path>#}
+{#                                <path d="M300,320 L540,320" id="middle"></path>#}
+{#                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"#}
+{#                                      id="bottom"#}
+{#                                      transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>#}
+{#                            </svg>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Header Tools End -->#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#<!-- Search Category Start -->#}
+{#<div class="mobile-search-area d-xl-none mb-15px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <div class="search-element media-body">#}
+{#                    <form class="d-flex"#}
+{#                          action="https://htmldemo.net/rozer/rozer/index.html#">#}
+{#                        <div class="search-category">#}
+{#                            <select>#}
+{#                                <option value="0">All categories</option>#}
+{#                                <option value="12">Laptop</option>#}
+{#                                <option value="13">- - Hot Categories</option>#}
+{#                                <option value="19">- - - - Dresses</option>#}
+{#                                <option value="20">- - - - Jackets &amp;#}
+{#                                    Coats#}
+{#                                </option>#}
+{#                                <option value="21">- - - - Sweaters</option>#}
+{#                                <option value="22">- - - - Jeans</option>#}
+{#                                <option value="23">- - - - Blouses &amp;#}
+{#                                    Shirts#}
+{#                                </option>#}
+{#                                <option value="14">- - Outerwear &amp;#}
+{#                                    Jackets#}
+{#                                </option>#}
+{#                                <option value="24">- - - - Basic Jackets#}
+{#                                </option>#}
+{#                                <option value="25">- - - - Real Fur</option>#}
+{#                                <option value="26">- - - - Down Coats</option>#}
+{#                                <option value="27">- - - - Blazers</option>#}
+{#                                <option value="28">- - - - Trench Coats#}
+{#                                </option>#}
+{#                                <option value="15">- - Weddings &amp; Events#}
+{#                                </option>#}
+{#                                <option value="29">- - - - Wedding Dresses#}
+{#                                </option>#}
+{#                                <option value="30">- - - - Evening Dresses#}
+{#                                </option>#}
+{#                                <option value="31">- - - - Prom Dresses#}
+{#                                </option>#}
+{#                                <option value="32">- - - - Bridesmaid Dresses#}
+{#                                </option>#}
+{#                                <option value="33">- - - - Wedding#}
+{#                                    Accessories#}
+{#                                </option>#}
+{#                                <option value="16">- - Bottoms</option>#}
+{#                                <option value="34">- - - - Skirts</option>#}
+{#                                <option value="35">- - - - Leggings</option>#}
+{#                                <option value="36">- - - - Pants &amp; Capris#}
+{#                                </option>#}
+{#                                <option value="37">- - - - Wide Leg Pants#}
+{#                                </option>#}
+{#                                <option value="38">- - - - Shorts</option>#}
+{#                                <option value="17">- - Tops &amp; Sets</option>#}
+{#                                <option value="39">- - - - Tank Tops</option>#}
+{#                                <option value="40">- - - - Suits &amp; Sets#}
+{#                                </option>#}
+{#                                <option value="41">- - - - Jumpsuits</option>#}
+{#                                <option value="42">- - - - Rompers</option>#}
+{#                                <option value="43">- - - - Sleep &amp; Lounge#}
+{#                                </option>#}
+{#                                <option value="18">- - Accessories</option>#}
+{#                                <option value="44">- - - - Eyewear &amp;#}
+{#                                    Accessories#}
+{#                                </option>#}
+{#                                <option value="45">- - - - Hats &amp; Caps#}
+{#                                </option>#}
+{#                                <option value="46">- - - - Belts &amp;#}
+{#                                    Cummerbunds#}
+{#                                </option>#}
+{#                                <option value="47">- - - - Scarves &amp;#}
+{#                                    Wraps#}
+{#                                </option>#}
+{#                                <option value="48">- - - - Gloves &amp;#}
+{#                                    Mittens#}
+{#                                </option>#}
+{#                                <option value="49">Computer</option>#}
+{#                                <option value="50">- - Bottoms</option>#}
+{#                                <option value="53">- - - - Skirts</option>#}
+{#                                <option value="54">- - - - Leggings</option>#}
+{#                                <option value="55">- - - - Jeans</option>#}
+{#                                <option value="56">- - - - Pants &amp; Capris#}
+{#                                </option>#}
+{#                                <option value="57">- - - - Shorts</option>#}
+{#                                <option value="51">- - Outerwear &amp;#}
+{#                                    Jackets#}
+{#                                </option>#}
+{#                                <option value="58">- - - - Trench</option>#}
+{#                                <option value="59">- - - - Genuine Leather#}
+{#                                </option>#}
+{#                                <option value="60">- - - - Parkas</option>#}
+{#                                <option value="61">- - - - Down Jackets#}
+{#                                </option>#}
+{#                                <option value="62">- - - - Wool &amp; Blends#}
+{#                                </option>#}
+{#                                <option value="52">- - Underwear &amp;#}
+{#                                    Loungewear#}
+{#                                </option>#}
+{#                                <option value="63">- - - - Boxers</option>#}
+{#                                <option value="64">- - - - Briefs</option>#}
+{#                                <option value="65">- - - - Long Johns</option>#}
+{#                                <option value="66">- - - - Men's Sleep &amp;#}
+{#                                    Lounge#}
+{#                                </option>#}
+{#                                <option value="67">- - - - Pajama Sets</option>#}
+{#                                <option value="68">Smartphone</option>#}
+{#                                <option value="69">- - Accessories &amp;#}
+{#                                    Parts#}
+{#                                </option>#}
+{#                                <option value="75">- - - - Cables &amp;#}
+{#                                    Adapters#}
+{#                                </option>#}
+{#                                <option value="76">- - - - Batteries</option>#}
+{#                                <option value="77">- - - - Chargers</option>#}
+{#                                <option value="78">- - - - Bags &amp; Cases#}
+{#                                </option>#}
+{#                                <option value="79">- - - - Electronic#}
+{#                                    Cigarettes#}
+{#                                </option>#}
+{#                                <option value="70">- - Audio &amp; Video#}
+{#                                </option>#}
+{#                                <option value="80">- - - - Televisions</option>#}
+{#                                <option value="81">- - - - TV Receivers#}
+{#                                </option>#}
+{#                                <option value="82">- - - - Projectors</option>#}
+{#                                <option value="83">- - - - Audio Amplifier#}
+{#                                    Boards#}
+{#                                </option>#}
+{#                                <option value="84">- - - - TV Sticks</option>#}
+{#                                <option value="71">- - Camera &amp; Photo#}
+{#                                </option>#}
+{#                                <option value="85">- - - - Digital Cameras#}
+{#                                </option>#}
+{#                                <option value="86">- - - - Camcorders</option>#}
+{#                                <option value="87">- - - - Camera Drones#}
+{#                                </option>#}
+{#                                <option value="88">- - - - Action Cameras#}
+{#                                </option>#}
+{#                                <option value="89">- - - - Photo Studio#}
+{#                                    Supplies#}
+{#                                </option>#}
+{#                                <option value="72">- - Portable Audio &amp;#}
+{#                                    Video#}
+{#                                </option>#}
+{#                                <option value="90">- - - - Headphones</option>#}
+{#                                <option value="91">- - - - Speakers</option>#}
+{#                                <option value="92">- - - - MP3 Players</option>#}
+{#                                <option value="93">- - - - VR/AR Devices#}
+{#                                </option>#}
+{#                                <option value="94">- - - - Microphones</option>#}
+{#                                <option value="73">- - Smart Electronics#}
+{#                                </option>#}
+{#                                <option value="95">- - - - Wearable Devices#}
+{#                                </option>#}
+{#                                <option value="96">- - - - Smart Home#}
+{#                                    Appliances#}
+{#                                </option>#}
+{#                                <option value="97">- - - - Smart Remote#}
+{#                                    Controls#}
+{#                                </option>#}
+{#                                <option value="98">- - - - Smart Watches#}
+{#                                </option>#}
+{#                                <option value="99">- - - - Smart Wristbands#}
+{#                                </option>#}
+{#                                <option value="74">- - Video Games</option>#}
+{#                                <option value="100">- - - - Handheld Game#}
+{#                                    Players#}
+{#                                </option>#}
+{#                                <option value="101">- - - - Game Controllers#}
+{#                                </option>#}
+{#                                <option value="102">- - - - Joysticks</option>#}
+{#                                <option value="103">- - - - Stickers</option>#}
+{#                                <option value="104">Game Consoles</option>#}
+{#                                <option value="105">Mp3 &amp; headphone#}
+{#                                </option>#}
+{#                                <option value="106">Tv &amp; Video</option>#}
+{#                                <option value="107">Watches</option>#}
+{#                                <option value="108">Washing Machine</option>#}
+{#                                <option value="109">Camera</option>#}
+{#                                <option value="110">Audio &amp; Theater#}
+{#                                </option>#}
+{#                                <option value="111">Accessories</option>#}
+{#                                <option value="112">Games &amp; Consoles#}
+{#                                </option>#}
+{#                            </select>#}
+{#                        </div>#}
+{#                        <input type="text"#}
+{#                               placeholder="Enter your search key ... ">#}
+{#                        <button><i class="icon-magnifier"></i></button>#}
+{#                    </form>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Search Category End -->#}
+{#<div class="mobile-category-nav d-xl-none mb-15px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{##}
+{#                <!--=======  category menu  =======-->#}
+{#                <div class="hero-side-category">#}
+{#                    <!-- Category Toggle Wrap -->#}
+{#                    <div class="category-toggle-wrap">#}
+{#                        <!-- Category Toggle -->#}
+{#                        <button class="category-toggle"><i#}
+{#                                class="fa fa-bars"></i> All Categories#}
+{#                        </button>#}
+{#                    </div>#}
+{##}
+{#                    <!-- Category Menu -->#}
+{#                    <nav class="category-menu">#}
+{#                        <ul>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-1">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Accessories#}
+{#                                    &amp; Parts<i#}
+{#                                            class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-1">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Cables#}
+{#                                            &amp; Adapters</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Batteries</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Chargers</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Bags#}
+{#                                            &amp; Cases</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Electronic#}
+{#                                            Cigarettes</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-2">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Camera#}
+{#                                    &amp; Photo<i#}
+{#                                            class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-2">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Digital#}
+{#                                            Cameras</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Camcorders</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Camera#}
+{#                                            Drones</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Action#}
+{#                                            Cameras</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Photo#}
+{#                                            Studio Supplies</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-3">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                    Electronics <i#}
+{#                                            class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-3">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Wearable#}
+{#                                            Devices</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                            Home Appliances</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                            Remote Controls</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                            Watches</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                            Wristbands</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-4">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Audio#}
+{#                                    &amp; Video <i#}
+{#                                            class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-4">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Televisions</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">TV#}
+{#                                            Receivers</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Projectors</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Audio#}
+{#                                            Amplifier Boards</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">TV#}
+{#                                            Sticks</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-5">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Portable#}
+{#                                    Audio &amp; Video <i#}
+{#                                            class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-5">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Headphones</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Speakers</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">MP3#}
+{#                                            Players</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">VR/AR#}
+{#                                            Devices</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Microphones</a>#}
+{#                                    </li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="menu-item-has-children menu-item-has-children-6">#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Video#}
+{#                                    Game <i class="ion-ios-arrow-down"></i></a>#}
+{#                                <!-- category submenu -->#}
+{#                                <ul class="category-mega-menu category-mega-menu-6">#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Handheld#}
+{#                                            Game Players</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Game#}
+{#                                            Controllers</a></li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Joysticks</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="https://htmldemo.net/rozer/rozer/index.html#">Stickers</a>#}
+{#                                    </li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Televisions</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Digital#}
+{#                                    Cameras</a></li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Headphones</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Wearable#}
+{#                                    Devices</a></li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Smart#}
+{#                                    Watches</a></li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">Game#}
+{#                                    Controllers</a></li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#">#}
+{#                                    Smart Home Appliances</a></li>#}
+{#                            <li class="hidden" style="display: none;"><a#}
+{#                                    href="https://htmldemo.net/rozer/rozer/index.html#">Projectors</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                                   id="more-btn"><i class="ion-ios-plus-empty"#}
+{#                                                    aria-hidden="true"></i>#}
+{#                                    More Categories</a>#}
+{#                            </li>#}
+{#                        </ul>#}
+{#                    </nav>#}
+{#                </div>#}
+{##}
+{#                <!--=======  End of category menu =======-->#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Mobile Header Section End -->#}
+{#<!-- OffCanvas Wishlist Start -->#}
+{#<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">#}
+{#    <div class="inner">#}
+{#        <div class="head">#}
+{#            <span class="title">Wishlist</span>#}
+{#            <button class="offcanvas-close">×</button>#}
+{#        </div>#}
+{#        <div class="body customScroll">#}
+{#            <ul class="minicart-product-list">#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/1(1).jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Walnut Cutting Board</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/2(1).jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Lucky Wooden Elephant</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/3.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Fish Cut Out Set</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#        <div class="foot">#}
+{#            <div class="buttons">#}
+{#                <a href="https://htmldemo.net/rozer/rozer/wishlist.html"#}
+{#                   class="btn btn-dark btn-hover-primary mt-30px">view#}
+{#                    wishlist</a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- OffCanvas Wishlist End -->#}
+{##}
+{#<!-- OffCanvas Cart Start -->#}
+{#<div id="offcanvas-cart" class="offcanvas offcanvas-cart">#}
+{#    <div class="inner">#}
+{#        <div class="head">#}
+{#            <span class="title">Cart</span>#}
+{#            <button class="offcanvas-close">×</button>#}
+{#        </div>#}
+{#        <div class="body customScroll">#}
+{#            <ul class="minicart-product-list">#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/1(1).jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Walnut Cutting Board</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$100.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/2(1).jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Lucky Wooden Elephant</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$35.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                       class="image"><img#}
+{#                            src="../../static/userResources/image/3.jpg"#}
+{#                            alt="Cart product Image"></a>#}
+{#                    <div class="content">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html"#}
+{#                           class="title">Fish Cut Out Set</a>#}
+{#                        <span class="quantity-price">1 x <span class="amount">$9.00</span></span>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/index.html#"#}
+{#                           class="remove">×</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#        <div class="foot">#}
+{#            <div class="sub-total">#}
+{#                <strong>Subtotal :</strong>#}
+{#                <span class="amount">$144.00</span>#}
+{#            </div>#}
+{#            <div class="buttons">#}
+{#                <a href="https://htmldemo.net/rozer/rozer/cart.html"#}
+{#                   class="btn btn-dark btn-hover-primary mb-30px">view cart</a>#}
+{#                <a href="https://htmldemo.net/rozer/rozer/checkout.html"#}
+{#                   class="btn btn-outline-dark current-btn">checkout</a>#}
+{#            </div>#}
+{#            <p class="minicart-message">Free Shipping on All Orders Over#}
+{#                $100!</p>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- OffCanvas Cart End -->#}
+{##}
+{#<!-- OffCanvas Search Start -->#}
+{#<div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">#}
+{#    <div class="inner customScroll">#}
+{#        <div class="head">#}
+{#            <span class="title">&nbsp;</span>#}
+{#            <button class="offcanvas-close" fdprocessedid="13uka8">×</button>#}
+{#        </div>#}
+{#        <div class="offcanvas-menu-search-form">#}
+{#            <form action="https://htmldemo.net/rozer/rozer/index.html#">#}
+{#                <input type="text" placeholder="Search..."#}
+{#                       fdprocessedid="oitx8q">#}
+{#                <button fdprocessedid="0epusr"><i class="icon-magnifier"></i>#}
+{#                </button>#}
+{#            </form>#}
+{#        </div>#}
+{#        <div class="offcanvas-menu">#}
+{#            <ul>#}
+{#                <li><span class="menu-expand"></span><a#}
+{#                        href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                        class="menu-text">Home</span></a>#}
+{#                    <ul class="sub-menu">#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index.html"><span#}
+{#                                    class="menu-text">Home 1</span></a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index-2.html"><span#}
+{#                                    class="menu-text">Home 2</span></a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index-3.html"><span#}
+{#                                    class="menu-text">Home 3</span></a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index-4.html"><span#}
+{#                                    class="menu-text">Home 4</span></a></li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li><span class="menu-expand"></span><a#}
+{#                        href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                        class="menu-text">Shop</span></a>#}
+{#                    <ul class="sub-menu">#}
+{#                        <li><span class="menu-expand"></span>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                    class="menu-text">Shop Grid</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-3-column.html">Shop#}
+{#                                        Grid 3 Column</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html">Shop#}
+{#                                        Grid 4 Column</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-left-sidebar.html">Shop#}
+{#                                        Grid Left Sidebar</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-right-sidebar.html">Shop#}
+{#                                        Grid Right Sidebar</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><span class="menu-expand"></span>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                    class="menu-text">Shop List</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-list.html">Shop#}
+{#                                        List</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-list-left-sidebar.html">Shop#}
+{#                                        List Left Sidebar</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/shop-list-right-sidebar.html">Shop#}
+{#                                        List Right Sidebar</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><span class="menu-expand"></span>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                    class="menu-text">Shop Single</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product.html">Shop#}
+{#                                        Single</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-variable.html">Shop#}
+{#                                        Variable</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-affiliate.html">Shop#}
+{#                                        Affiliate</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-group.html">Shop#}
+{#                                        Group</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-tabstyle-2.html">Shop#}
+{#                                        Tab 2</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-tabstyle-3.html">Shop#}
+{#                                        Tab 3</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><span class="menu-expand"></span>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                    class="menu-text">Shop Single</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-slider.html">Shop#}
+{#                                        Slider</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-gallery-left.html">Shop#}
+{#                                        Gallery Left</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-gallery-right.html">Shop#}
+{#                                        Gallery Right</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-sticky-left.html">Shop#}
+{#                                        Sticky Left</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/single-product-sticky-right.html">Shop#}
+{#                                        Sticky Right</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li><span class="menu-expand"></span><a#}
+{#                        href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                        class="menu-text">Pages</span></a>#}
+{#                    <ul class="sub-menu">#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/about.html">About#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/cart.html">Cart#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/checkout.html">Checkout#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/compare.html">Compare#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/login.html">Login#}
+{#                                &amp; Register Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/my-account.html">Account#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/wishlist.html">Wishlist#}
+{#                                Page</a></li>#}
+{#                        <li>#}
+{#                            <a href="https://htmldemo.net/rozer/rozer/thank-you-page.html">Thank#}
+{#                                You Page</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li><span class="menu-expand"></span><a#}
+{#                        href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                        class="menu-text">Blog</span></a>#}
+{#                    <ul class="sub-menu">#}
+{#                        <li><span class="menu-expand"></span><a#}
+{#                                href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                class="menu-text">Blog Grid</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-grid-left-sidebar.html">Blog#}
+{#                                        Grid Left Sidebar</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-grid-right-sidebar.html">Blog#}
+{#                                        Grid Right Sidebar</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><span class="menu-expand"></span><a#}
+{#                                href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                class="menu-text">Blog List</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-list-left-sidebar.html">Blog#}
+{#                                        List Left Sidebar</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-list-right-sidebar.html">Blog#}
+{#                                        List Right Sidebar</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><span class="menu-expand"></span><a#}
+{#                                href="https://htmldemo.net/rozer/rozer/index.html#"><span#}
+{#                                class="menu-text">Blog Single</span></a>#}
+{#                            <ul class="sub-menu">#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-single-left-sidebar.html">Blog#}
+{#                                        Single Left Sidebar</a></li>#}
+{#                                <li>#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/blog-single-right-sidebar.html">Blog#}
+{#                                        Single Right Sidbar</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#                <li><a href="https://htmldemo.net/rozer/rozer/contact.html">Contact#}
+{#                    Us</a></li>#}
+{#            </ul>#}
+{#        </div>#}
+{#        <div class="offcanvas-buttons mt-30px">#}
+{#            <div class="header-tools d-flex">#}
+{#                <div class="cart-info d-flex align-self-center">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/my-account.html"#}
+{#                       class="user"><i class="icon-user"></i></a>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/wishlist.html"#}
+{#                       data-number="3"><i class="icon-heart"></i></a>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/cart.html"#}
+{#                       data-number="3"><i class="icon-bag"></i></a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="offcanvas-social mt-30px">#}
+{#            <ul>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                            class="icon-social-facebook"></i></a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                            class="icon-social-twitter"></i></a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                            class="icon-social-instagram"></i></a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                            class="icon-social-google"></i></a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                            class="icon-social-instagram"></i></a>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- OffCanvas Search End -->#}
+{##}
+{#<div class="offcanvas-overlay"></div>#}
+{##}
+{#<!-- Slider Start -->#}
+{#<div class="slider-area slider-height-1">#}
+{#    <div class="hero-slider swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">#}
+{#        <div class="swiper-wrapper"#}
+{#             id="swiper-wrapper-f8cabffd1fe7e10ef" aria-live="off"#}
+{#             style="transition-duration: 0ms; transform:#}
+{#                     translate3d(-4647px, 0px, 0px);">#}
+{#            <div#}
+{#                    class="swiper-slide bg-img d-flex swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"#}
+{#                    style="background-image: url(../../static/userResources/image/sample-1.jpg); width: 1519px; margin-right: 30px;"#}
+{#                    data-swiper-slide-index="1" role="group"#}
+{#                    aria-label="2 / 2">#}
+{#                <div class="container align-self-center">#}
+{#                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">#}
+{#                        <span class="animated color-gray">WIRELESS BLUETOOTH GAMING</span>#}
+{#                        <h1 class="animated color-black">#}
+{#                            Bluetooth Gamepad <br>#}
+{#                            <strong>IPEGA PG-9023</strong>#}
+{#                        </h1>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"#}
+{#                           class="shop-btn animated">SHOP NOW</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Single Slider  -->#}
+{#            <div class="swiper-slide bg-img d-flex #}
+{#                    swiper-slide-duplicate-active"#}
+{#                 style="background-image: url(../../static/userResources/image/esx7rkmn.png); width: 1519px; #}
+{#                    margin-right: 30px;"#}
+{#                 data-swiper-slide-index="0" role="group"#}
+{#                 aria-label="1 / 2">#}
+{#                <div class="container align-self-center">#}
+{#                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">#}
+                        {#                        <span class="animated color-gray">NEW DESIGN FEATURES</span>#}
+{#                        <h1 class="animated color-black">#}
+                            {#                            Hamsung Galaxy <br>#}
+                            {#                            <strong>S10+ Edge</strong>#}
+{#                        </h1>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"#}
+{#                           class="shop-btn animated">SHOP NOW</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Single Slider  -->#}
+{#            <div#}
+{#                    class="swiper-slide bg-img d-flex swiper-slide-prev swiper-slide-duplicate-next"#}
+{#                    style="background-image: url(../../static/userResources/image/aa.jpg); width: 1519px; #}
+{#                    margin-right: 30px;"#}
+{#                    data-swiper-slide-index="1" role="group"#}
+{#                    aria-label="2 / 2">#}
+{#                <div class="container align-self-center">#}
+{#                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">#}
+{#                        <span class="animated color-gray">WIRELESS BLUETOOTH GAMING</span>#}
+{#                        <h1 class="animated color-black">#}
+{#                            Bluetooth Gamepad <br>#}
+{#                            <strong>IPEGA PG-9023</strong>#}
+{#                        </h1>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"#}
+{#                           class="shop-btn animated">SHOP NOW</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Single Slider  -->#}
+{#            <div class="swiper-slide bg-img d-flex swiper-slide-duplicate swiper-slide-active"#}
+{#                 style="background-image: url(../../static/userResources/image/sample-2.jpg); width: 1519px; margin-right: 30px;"#}
+{#                 data-swiper-slide-index="0" role="group" aria-label="1 / 2">#}
+{#                <div class="container align-self-center">#}
+{#                    <div class="slider-content-1 slider-animated-1 text-start pl-60px">#}
+{#                        <span class="animated color-gray">NEW DESIGN FEATURES</span>#}
+{#                        <h1 class="animated color-black">#}
+{#                            Hamsung Galaxy <br>#}
+{#                            <strong>S10+ Edge</strong>#}
+{#                        </h1>#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"#}
+{#                           class="shop-btn animated">SHOP NOW</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!-- Add Pagination -->#}
+{#        <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">#}
+{#            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"#}
+{#                  tabindex="0" role="button" aria-label="Go to slide 1"></span><span#}
+{#                class="swiper-pagination-bullet" tabindex="0" role="button"#}
+{#                aria-label="Go to slide 2"></span></div>#}
+{#        <span class="swiper-notification" aria-live="assertive"#}
+{#              aria-atomic="true"></span></div>#}
+{#</div>#}
+{#<!-- Slider End -->#}
+{#<!-- Static Area Start -->#}
+{#<div class="static-area mtb-60px">#}
+{#    <div class="container">#}
+{#        <div class="static-area-wrap">#}
+{#            <div class="row">#}
+{#                <!-- Static Single Item Start -->#}
+{#                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-md-30px mb-lm-30px">#}
+{#                    <div class="single-static">#}
+{#                        <img src="../../static/userResources/image/static-icons-1.png"#}
+{#                             alt="" class="img-responsive">#}
+{#                        <div class="single-static-meta">#}
+{#                            <h4>Free Shipping</h4>#}
+{#                            <p>On all orders over $75.00</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Static Single Item End -->#}
+{#                <!-- Static Single Item Start -->#}
+{#                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-md-30px mb-lm-30px">#}
+{#                    <div class="single-static">#}
+{#                        <img src="../../static/userResources/image/static-icons-2.png"#}
+{#                             alt="" class="img-responsive">#}
+{#                        <div class="single-static-meta">#}
+{#                            <h4>Free Returns</h4>#}
+{#                            <p>Returns are free within 9 days</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Static Single Item End -->#}
+{#                <!-- Static Single Item Start -->#}
+{#                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6 mb-sm-30px">#}
+{#                    <div class="single-static">#}
+{#                        <img src="../../static/userResources/image/static-icons-4.png"#}
+{#                             alt="" class="img-responsive">#}
+{#                        <div class="single-static-meta">#}
+{#                            <h4>Support 24/7</h4>#}
+{#                            <p>Contact us 24 hours a day</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Static Single Item End -->#}
+{#                <!-- Static Single Item Start -->#}
+{#                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">#}
+{#                    <div class="single-static">#}
+{#                        <img src="../../static/userResources/image/static-icons-3.png"#}
+{#                             alt="" class="img-responsive">#}
+{#                        <div class="single-static-meta">#}
+{#                            <h4>100% Payment Secure</h4>#}
+{#                            <p>Your payment are safe with us.</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Static Single Item End -->#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Static Area End -->#}
+{#<!-- category Area Start -->#}
+{#<div class="popular-categories-area mt-30px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <div class="section-title">#}
+{#                    <h2 class="section-heading">Popular Categories</h2>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="category-slider slider-nav-style-1 swiper-initialized swiper-horizontal swiper-pointer-events">#}
+{#            <div class="category-slider-wrapper swiper-wrapper"#}
+{#                 id="swiper-wrapper-4c10f7cf12a0b92f4" aria-live="polite"#}
+{#                 style="transform: translate3d(0px, 0px, 0px);">#}
+{#                {% for i in category_list %}#}
+{#                    <div class="category-slider-item swiper-slide swiper-slide-active"#}
+{#                         role="group" aria-label="1 / 6"#}
+{#                         style="width: 258px; margin-right: 30px;">#}
+{##}
+{#                        <div class="thumb-category">#}
+{#                            <a href="/user_load_subcategory?category_id={{ i.category_id }}">#}
+{#                                <img src="{{ i.category_image.url }}"#}
+{#                                     height="258px" width="170px"#}
+{#                                     alt="product-image.jpg">#}
+{#                            </a>#}
+{#                        </div>#}
+{#                        <div class="category-discript mb-3">#}
+{#                            <h4>{{ i.category_name }}</h4>#}
+{##}
+{#                            <a href="/user_load_subcategory?category_id={{ i.category_id }}"#}
+{#                               class="view-all-btn">View All</a>#}
+{#                        </div>#}
+{##}
+{#                    </div>#}
+{#                {% endfor %}#}
+                {#                <div class="category-slider-item swiper-slide swiper-slide-next"#}
+                {#                     role="group" aria-label="2 / 6"#}
+                {#                     style="width: 258px; margin-right: 30px;">#}
+                {#                    <div class="thumb-category">#}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html">#}
+                {#                           <img src="../../static/userResources/image/lights/decorative_lights.jpg" height="258px" width="170px"#}
+                {#                                 alt="product-image.jpg">#}
+                {#                        </a>#}
+                {#                    </div>#}
+                {#                    <div class="category-discript mb-3">#}
+                {#                        <h4>Decorative light</h4>#}
+                {##}
+                {#                        <a href="/user_subcategory"#}
+                {#                           class="view-all-btn">View All</a>#}
+                {#                    </div>#}
+                {#                </div>#}
+                {#                <div class="category-slider-item swiper-slide" role="group"#}
+                {#                     aria-label="3 / 6"#}
+                {#                     style="width: 258px; margin-right: 30px;">#}
+                {#                    <div class="thumb-category">#}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html">#}
+                {#                            <img src="../../static/userResources/image/lights/indoor_light.jpg" height="258px" width="170px"#}
+                {#                                 alt="product-image.jpg">#}
+                {#                        </a>#}
+                {#                    </div>#}
+                {#                    <div class="category-discript mb-3">#}
+                {#                        <h4>Indoor light</h4>#}
+                {##}
+                {#                        <a href="/user_subcategory"#}
+                {#                           class="view-all-btn">View All</a>#}
+                {#                    </div>#}
+                {#                </div>#}
+                {#                <div class="category-slider-item swiper-slide" role="group"#}
+                {#                     aria-label="4 / 6"#}
+                {#                     style="width: 258px; margin-right: 30px;">#}
+                {#                    <div class="thumb-category">#}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html">#}
+                {#                            <img src="../../static/userResources/image/lights/office_light.jpg" height="258px" width="170px"#}
+                {#                                 alt="product-image.jpg">#}
+                {#                        </a>#}
+                {#                    </div>#}
+                {#                    <div class="category-discript mb-3">#}
+                {#                        <h4> Office light</h4>#}
+                {##}
+                {#                        <a href="/user_subcategory"#}
+                {#                           class="view-all-btn">View All</a>#}
+                {#                    </div>#}
+                {#                </div>#}
+                {#                <div class="category-slider-item swiper-slide" role="group"#}
+                {#                     aria-label="5 / 6"#}
+                {#                     style="width: 258px; margin-right: 30px;">#}
+                {#                    <div class="thumb-category">#}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html">#}
+                {#                           <img src="../../static/userResources/image/lights/outdoor_light.jpg" height="258px" width="170px"#}
+                {#                                 alt="product-image.jpg">#}
+                {#                        </a>#}
+                {#                    </div>#}
+                {#                    <div class="category-discript mb-3">#}
+                {#                        <h4>Outdoor light</h4>#}
+                {##}
+                {#                        <a href="/user_subcategory"#}
+                {#                           class="view-all-btn">View All</a>#}
+                {#                    </div>#}
+                {#                </div>#}
+                {#                <div class="category-slider-item swiper-slide" role="group"#}
+                {#                     aria-label="6 / 6"#}
+                {#                     style="width: 258px; margin-right: 30px;">#}
+                {#                    <div class="thumb-category">#}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/single-product.html">#}
+                {#                            <img src="../../static/userResources/image/1(1).jpg"#}
+                {#                                 alt="light_image-image.jpg">#}
+                {#                        </a>#}
+                {#                    </div>#}
+                {#                    <div class="category-discript mb-3">#}
+                {#                        <h4>Smart Electronics</h4>#}
+                {#                        #}
+                {#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"#}
+                {#                           class="view-all-btn">View All</a>#}
+                {#                    </div>#}
+                {#                </div>#}
+{#            </div>#}
+{#            <!-- Add Arrows -->#}
+{#            <div class="swiper-buttons">#}
+{#                <div class="swiper-button-next" tabindex="0" role="button"#}
+{#                     aria-label="Next slide"#}
+{#                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"#}
+{#                     aria-disabled="false"></div>#}
+{#                <div class="swiper-button-prev swiper-button-disabled"#}
+{#                     tabindex="-1" role="button" aria-label="Previous slide"#}
+{#                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"#}
+{#                     aria-disabled="true"></div>#}
+{#            </div>#}
+{#            <span class="swiper-notification" aria-live="assertive"#}
+{#                  aria-atomic="true"></span></div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- category Area End -->#}
+{#<!-- Deal Area Start -->#}
+{#<div class="deal-area bg-light-gray pt-60px pb-30px">#}
+{#    <!-- Banner Area Start -->#}
+{#    <div class="banner-area mt-30px">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-md-12">#}
+{#                    <div class="banner-wrapper">#}
+{#                        <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html">#}
+{#                            <img src="../../static/userResources/image/aa(1).jpg"#}
+{#                                 alt="" style="width: 1440px;"#}
+{#                                 height="220px"></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <!-- Banner Area End -->#}
+{#</div>#}
+{#<!-- Deal Area End -->#}
+{#<!-- Brand area start -->#}
+{#<div class="brand-area mb-60px">#}
+{#    <div class="container">#}
+{#        <div class="brand-slider slider-nav-style-1 slider-nav-style-2 swiper-initialized swiper-horizontal swiper-pointer-events">#}
+{#            <div class="brand-slider-wrapper swiper-wrapper"#}
+{#                 id="swiper-wrapper-eb5d2d155991b713" aria-live="polite"#}
+{#                 style="transform: translate3d(0px, 0px, 0px);">#}
+{#                <div class="brand-slider-item swiper-slide swiper-slide-active"#}
+{#                     role="group" aria-label="1 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/1(3).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide swiper-slide-next"#}
+{#                     role="group" aria-label="2 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/2(3).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide" role="group"#}
+{#                     aria-label="3 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/3(2).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide" role="group"#}
+{#                     aria-label="4 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/4(2).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide" role="group"#}
+{#                     aria-label="5 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/5(2).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide" role="group"#}
+{#                     aria-label="6 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/1(3).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#                <div class="brand-slider-item swiper-slide" role="group"#}
+{#                     aria-label="7 / 7"#}
+{#                     style="width: 257.6px; margin-right: 30px;">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/index.html#"><img#}
+{#                            src="../../static/userResources/image/2(3).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Add Arrows -->#}
+{#            <div class="swiper-buttons">#}
+{#                <div class="swiper-button-next" tabindex="0" role="button"#}
+{#                     aria-label="Next slide"#}
+{#                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"#}
+{#                     aria-disabled="false"></div>#}
+{#                <div class="swiper-button-prev swiper-button-disabled"#}
+{#                     tabindex="-1" role="button" aria-label="Previous slide"#}
+{#                     aria-controls="swiper-wrapper-3f8caf2d15e7d759"#}
+{#                     aria-disabled="true"></div>#}
+{#            </div>#}
+{#            <span class="swiper-notification" aria-live="assertive"#}
+{#                  aria-atomic="true"></span></div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Brand area end -->#}
+{#<!-- Banner Area Start -->#}
+{#<div class="banner-area mb-30px">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-6 col-xs-12">#}
+{#                <div class="banner-wrapper">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"><img#}
+{#                            src="../../static/userResources/image/7(1).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-6 col-xs-12">#}
+{#                <div class="banner-wrapper">#}
+{#                    <a href="https://htmldemo.net/rozer/rozer/shop-4-column.html"><img#}
+{#                            src="../../static/userResources/image/8(1).jpg"#}
+{#                            alt=""></a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Banner Area End -->#}
+{#<!-- Footer Area Start -->#}
+{#{% include 'user/footer.html' %}#}
+{#<!-- Footer Area End -->#}
+{#<!-- Modal -->#}
+{#<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">#}
+{#    <div class="modal-dialog" role="document">#}
+{#        <div class="modal-content">#}
+{#            <div class="modal-header">#}
+{#                <button type="button" class="close" data-bs-dismiss="modal"#}
+{#                        aria-label="Close"><span aria-hidden="true">x</span>#}
+{#                </button>#}
+{#            </div>#}
+{#            <div class="modal-body">#}
+{#                <div class="row">#}
+{#                    <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">#}
+{#                        <!-- Swiper -->#}
+{#                        <div class="swiper-container gallery-top swiper-initialized swiper-horizontal swiper-pointer-events">#}
+{#                            <div class="swiper-wrapper"#}
+{#                                 id="swiper-wrapper-3f8caf2d15e7d759"#}
+{#                                 aria-live="polite"#}
+{#                                 style="transform: translate3d(0px, 0px, 0px);">#}
+{#                                <div class="swiper-slide swiper-slide-active"#}
+{#                                     role="group" aria-label="1 / 4"#}
+{#                                     style="width: 339px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/11.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide swiper-slide-next"#}
+{#                                     role="group" aria-label="2 / 4"#}
+{#                                     style="width: 339px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/12.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide" role="group"#}
+{#                                     aria-label="3 / 4" style="width: 339px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/13.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide" role="group"#}
+{#                                     aria-label="4 / 4" style="width: 339px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/14.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <span class="swiper-notification"#}
+{#                                  aria-live="assertive"#}
+{#                                  aria-atomic="true"></span></div>#}
+{#                        <div class="swiper-container gallery-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-thumbs">#}
+{#                            <div class="swiper-wrapper"#}
+{#                                 id="swiper-wrapper-151b91274fbe1ccd"#}
+{#                                 aria-live="polite"#}
+{#                                 style="transform: translate3d(0px, 0px, 0px);">#}
+{#                                <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active"#}
+{#                                     role="group" aria-label="1 / 4"#}
+{#                                     style="width: 77.25px; margin-right: 10px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/11.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide swiper-slide-visible swiper-slide-next"#}
+{#                                     role="group" aria-label="2 / 4"#}
+{#                                     style="width: 77.25px; margin-right: 10px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/12.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide swiper-slide-visible"#}
+{#                                     role="group" aria-label="3 / 4"#}
+{#                                     style="width: 77.25px; margin-right: 10px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/13.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                                <div class="swiper-slide swiper-slide-visible"#}
+{#                                     role="group" aria-label="4 / 4"#}
+{#                                     style="width: 77.25px; margin-right: 10px;">#}
+{#                                    <img class="img-responsive m-auto"#}
+{#                                         src="../../static/userResources/image/14.jpg"#}
+{#                                         alt="">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <span class="swiper-notification"#}
+{#                                  aria-live="assertive"#}
+{#                                  aria-atomic="true"></span></div>#}
+{#                    </div>#}
+{#                    <div class="col-md-7 col-sm-12 col-xs-12">#}
+{#                        <div class="product-details-content quickview-content">#}
+{#                            <h2>Originals Kaval Windbr</h2>#}
+{#                            <p class="reference">#}
+{#                                Reference:<span> demo_17</span></p>#}
+{#                            <div class="pro-details-rating-wrap">#}
+{#                                <div class="rating-product">#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                    <i class="ion-android-star"></i>#}
+{#                                </div>#}
+{#                                <span class="read-review"><a class="reviews"#}
+{#                                                             href="https://htmldemo.net/rozer/rozer/index.html#">Read reviews (1)</a></span>#}
+{#                            </div>#}
+{#                            <div class="pricing-meta">#}
+{#                                <ul>#}
+{#                                    <li class="old-price not-cut">€18.90</li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <p class="quickview-para">Lorem ipsum dolor sit#}
+{#                                amet, consectetur adipisic elit eiusm tempor#}
+{#                                incidid ut labore et dolore magna aliqua. Ut#}
+{#                                enim ad minim venialo quis nostrud exercitation#}
+{#                                ullamco</p>#}
+{#                            <div class="pro-details-size-color">#}
+{#                                <div class="pro-details-color-wrap">#}
+{#                                    <span>Color</span>#}
+{#                                    <div class="pro-details-color-content">#}
+{#                                        <ul>#}
+{#                                            <li class="blue"></li>#}
+{#                                            <li class="maroon active"></li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-quality">#}
+{#                                <div class="cart-plus-minus">#}
+{#                                    <div class="dec qtybutton">-</div>#}
+{#                                    <input class="cart-plus-minus-box"#}
+{#                                           type="text" name="qtybutton"#}
+{#                                           value="1">#}
+{#                                    <div class="inc qtybutton">+</div>#}
+{#                                </div>#}
+{#                                <div class="pro-details-cart btn-hover">#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/index.html#">#}
+{#                                        + Add To Cart</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-wish-com">#}
+{#                                <div class="pro-details-wishlist">#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/wishlist.html"><i#}
+{#                                            class="ion-android-favorite-outline"></i>Add#}
+{#                                        to wishlist</a>#}
+{#                                </div>#}
+{#                                <div class="pro-details-compare">#}
+{#                                    <a href="https://htmldemo.net/rozer/rozer/compare.html"><i#}
+{#                                            class="ion-ios-shuffle-strong"></i>Add#}
+{#                                        to compare</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="pro-details-social-info">#}
+{#                                <span>Share</span>#}
+{#                                <div class="social-info">#}
+{#                                    <ul>#}
+{#                                        <li>#}
+{#                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                                                    class="ion-social-facebook"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                                                    class="ion-social-twitter"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                                                    class="ion-social-google"></i></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="https://htmldemo.net/rozer/rozer/index.html#"><i#}
+{#                                                    class="ion-social-instagram"></i></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<!-- Modal end -->#}
+{#<!-- JS#}
+{#============================================ -->#}
+{##}
+{#<!-- Vendors JS -->#}
+{#<!-- <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>#}
+{#<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>#}
+{#<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>#}
+{#<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script> -->#}
+{##}
+{#<!-- Plugins JS -->#}
+{#<!-- <script src="assets/js/plugins/jquery-ui.min.js"></script>#}
+{#<script src="assets/js/plugins/swiper.min.js"></script>#}
+{#<script src="assets/js/plugins/countdown.js"></script>#}
+{#<script src="assets/js/plugins/scrollup.js"></script>#}
+{#<script src="assets/js/plugins/elevateZoom.js"></script> -->#}
+{##}
+{#<!-- Use the minified version files listed below for better performance and remove the files listed above -->#}
+{#<script src="../../static/userResources/js/vendor.min.js"></script>#}
+{#<script src="../../static/userResources/js/plugins.min.js"></script>#}
+{##}
+{#<!-- Main Activation JS -->#}
+{#<script src="../../static/userResources/js/main.js"></script>#}
+{#<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"#}
+{#        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"#}
+{#        crossorigin="anonymous"></script>#}
+{##}
+{##}
+{#<a id="scrollUp" href="https://htmldemo.net/rozer/rozer/index.html#top"#}
+{#   style="display: none; position: fixed; z-index: 2147483647;"><i#}
+{#        class="ion-android-arrow-up"></i></a><span#}
+{#        id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body>#}
+{#</html>#}

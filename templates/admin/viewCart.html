@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Dashor - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="themesdesign" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+          href="../../static/adminResources/image/favicon.ico">
+    <!-- DataTables -->
+    <link href="../../static/adminResources/css/dataTables.bootstrap4.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/buttons.bootstrap4.min.css"
+          rel="stylesheet" type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="../../static/adminResources/css/responsive.bootstrap4.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/animate.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+</head>
+<body class="fixed-left">
+<!-- Begin page -->
+<div id="wrapper">
+    <!-- ========== Left Sidebar Start ========== -->
+    {% include 'admin/menu.html' %}
+    <!-- Left Sidebar End -->
+    <!-- Start right Content here -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                {% include 'admin/header.html' %}
+
+            </div>
+            <!-- Top Bar End -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+
+                                </div>
+                                <h4 class="page-title">Cart Datatable</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+
+                                    <table id="datatable"
+                                           class="table table-bordered dt-responsive nowrap"
+                                           cellspacing="0" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>User Name</th>
+                                            <th>Product</th>
+                                            <th>Product Description</th>
+                                            <th>Product Price</th>
+                                            <th>Product Image</th>
+                                            <th>Product Quantity</th>
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$112,000</td>
+
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <!--end row-->
+
+                    <!-- end row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- Page content Wrapper -->
+        </div>
+        <!-- content -->
+        {% include 'admin/footer.html' %}
+
+    </div>
+    <!-- End Right content here -->
+</div>
+<!-- END wrapper -->
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/modernizr.min.js"></script>
+<script src="../../static/adminResources/js/detect.js"></script>
+<script src="../../static/adminResources/js/fastclick.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+<script src="../../static/adminResources/js/jquery.blockUI.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.nicescroll.js"></script>
+<script src="../../static/adminResources/js/jquery.scrollTo.min.js"></script>
+<!-- Required datatable js -->
+<script src="../../static/adminResources/js/jquery.dataTables.min.js"></script>
+<script src="../../static/adminResources/js/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="../../static/adminResources/js/dataTables.buttons.min.js"></script>
+<script src="../../static/adminResources/js/buttons.bootstrap4.min.js"></script>
+<script src="../../static/adminResources/js/jszip.min.js"></script>
+<script src="../../static/adminResources/js/pdfmake.min.js"></script>
+<script src="../../static/adminResources/js/vfs_fonts.js"></script>
+<script src="../../static/adminResources/js/buttons.html5.min.js"></script>
+<script src="../../static/adminResources/js/buttons.print.min.js"></script>
+<script src="../../static/adminResources/js/buttons.colVis.min.js"></script>
+<!-- Responsive examples -->
+<script src="../../static/adminResources/js/dataTables.responsive.min.js"></script>
+<script src="../../static/adminResources/js/responsive.bootstrap4.min.js"></script>
+<!-- Datatable init js -->
+<script src="../../static/adminResources/js/datatables.init.js"></script>
+<!-- App js -->
+<script src="../../static/adminResources/js/app.js"></script>
+</body>
+</html>
